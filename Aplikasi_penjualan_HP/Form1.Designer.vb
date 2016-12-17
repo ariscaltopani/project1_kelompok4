@@ -96,7 +96,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Fuchsia
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(348, 215)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -107,7 +107,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

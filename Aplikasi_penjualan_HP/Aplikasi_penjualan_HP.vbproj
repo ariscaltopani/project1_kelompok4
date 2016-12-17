@@ -72,6 +72,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barang.Designer.vb">
+      <DependentUpon>Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail Penjualan.Designer.vb">
+      <DependentUpon>Detail Penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Detail Penjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan.Designer.vb">
+      <DependentUpon>Karyawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
