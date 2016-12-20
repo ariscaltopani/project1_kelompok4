@@ -107,7 +107,6 @@ Partial Class Barang
         Me.BarangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BarangDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.BarangDataGridView.DataSource = Me.BarangBindingSource
-        Me.BarangDataGridView.Enabled = False
         Me.BarangDataGridView.Location = New System.Drawing.Point(221, 37)
         Me.BarangDataGridView.Name = "BarangDataGridView"
         Me.BarangDataGridView.Size = New System.Drawing.Size(468, 133)
