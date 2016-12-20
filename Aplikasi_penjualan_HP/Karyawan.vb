@@ -1,6 +1,6 @@
 ﻿Public Class Karyawan
 
-    Private Sub SalesBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalesBindingNavigatorSaveItem.Click
+    Private Sub SalesBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.SalesBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Kelompok2DataSet)
