@@ -8,11 +8,11 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DCB3A5B5-332D-4474-B0C8-204FD0536FBD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Aplikasi_penjualan_HP.My.MyApplication</StartupObject>
+    <StartupObject>Aplikasi_penjualan_HP.Karyawan</StartupObject>
     <RootNamespace>Aplikasi_penjualan_HP</RootNamespace>
     <AssemblyName>Aplikasi_penjualan_HP</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
