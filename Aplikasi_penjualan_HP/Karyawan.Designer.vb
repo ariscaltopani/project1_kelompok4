@@ -38,6 +38,7 @@ Partial Class Karyawan
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,7 +92,7 @@ Partial Class Karyawan
         Me.SalesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.SalesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.SalesDataGridView.DataSource = Me.SalesBindingSource
-        Me.SalesDataGridView.Location = New System.Drawing.Point(12, 28)
+        Me.SalesDataGridView.Location = New System.Drawing.Point(65, 76)
         Me.SalesDataGridView.Name = "SalesDataGridView"
         Me.SalesDataGridView.Size = New System.Drawing.Size(445, 220)
         Me.SalesDataGridView.TabIndex = 1
@@ -122,7 +123,7 @@ Partial Class Karyawan
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(495, 28)
+        Me.Button1.Location = New System.Drawing.Point(550, 76)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -131,7 +132,7 @@ Partial Class Karyawan
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(495, 78)
+        Me.Button2.Location = New System.Drawing.Point(550, 126)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -140,7 +141,7 @@ Partial Class Karyawan
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(495, 125)
+        Me.Button3.Location = New System.Drawing.Point(550, 173)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
@@ -149,7 +150,7 @@ Partial Class Karyawan
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(495, 174)
+        Me.Button4.Location = New System.Drawing.Point(550, 222)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
@@ -158,18 +159,30 @@ Partial Class Karyawan
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(495, 225)
+        Me.Button5.Location = New System.Drawing.Point(550, 273)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Keluar"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(274, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(200, 31)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Data Karyawan"
+        '
         'Karyawan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(737, 340)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -202,4 +215,5 @@ Partial Class Karyawan
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

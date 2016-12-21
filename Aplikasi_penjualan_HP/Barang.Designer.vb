@@ -42,6 +42,7 @@ Partial Class Barang
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Kode_BarangLabel = New System.Windows.Forms.Label()
         Merk_HPLabel = New System.Windows.Forms.Label()
         HargaLabel = New System.Windows.Forms.Label()
@@ -53,7 +54,7 @@ Partial Class Barang
         'Kode_BarangLabel
         '
         Kode_BarangLabel.AutoSize = True
-        Kode_BarangLabel.Location = New System.Drawing.Point(7, 40)
+        Kode_BarangLabel.Location = New System.Drawing.Point(12, 61)
         Kode_BarangLabel.Name = "Kode_BarangLabel"
         Kode_BarangLabel.Size = New System.Drawing.Size(72, 13)
         Kode_BarangLabel.TabIndex = 2
@@ -62,7 +63,7 @@ Partial Class Barang
         'Merk_HPLabel
         '
         Merk_HPLabel.AutoSize = True
-        Merk_HPLabel.Location = New System.Drawing.Point(7, 66)
+        Merk_HPLabel.Location = New System.Drawing.Point(12, 87)
         Merk_HPLabel.Name = "Merk_HPLabel"
         Merk_HPLabel.Size = New System.Drawing.Size(52, 13)
         Merk_HPLabel.TabIndex = 4
@@ -71,7 +72,7 @@ Partial Class Barang
         'HargaLabel
         '
         HargaLabel.AutoSize = True
-        HargaLabel.Location = New System.Drawing.Point(7, 92)
+        HargaLabel.Location = New System.Drawing.Point(12, 113)
         HargaLabel.Name = "HargaLabel"
         HargaLabel.Size = New System.Drawing.Size(39, 13)
         HargaLabel.TabIndex = 6
@@ -107,7 +108,7 @@ Partial Class Barang
         Me.BarangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BarangDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.BarangDataGridView.DataSource = Me.BarangBindingSource
-        Me.BarangDataGridView.Location = New System.Drawing.Point(221, 37)
+        Me.BarangDataGridView.Location = New System.Drawing.Point(221, 58)
         Me.BarangDataGridView.Name = "BarangDataGridView"
         Me.BarangDataGridView.Size = New System.Drawing.Size(468, 133)
         Me.BarangDataGridView.TabIndex = 1
@@ -133,7 +134,7 @@ Partial Class Barang
         'Kode_BarangTextBox
         '
         Me.Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BarangBindingSource, "Kode Barang", True))
-        Me.Kode_BarangTextBox.Location = New System.Drawing.Point(85, 37)
+        Me.Kode_BarangTextBox.Location = New System.Drawing.Point(90, 58)
         Me.Kode_BarangTextBox.Name = "Kode_BarangTextBox"
         Me.Kode_BarangTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Kode_BarangTextBox.TabIndex = 3
@@ -141,7 +142,7 @@ Partial Class Barang
         'Merk_HPTextBox
         '
         Me.Merk_HPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BarangBindingSource, "Merk HP", True))
-        Me.Merk_HPTextBox.Location = New System.Drawing.Point(85, 63)
+        Me.Merk_HPTextBox.Location = New System.Drawing.Point(90, 84)
         Me.Merk_HPTextBox.Name = "Merk_HPTextBox"
         Me.Merk_HPTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Merk_HPTextBox.TabIndex = 5
@@ -149,7 +150,7 @@ Partial Class Barang
         'HargaTextBox
         '
         Me.HargaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BarangBindingSource, "Harga", True))
-        Me.HargaTextBox.Location = New System.Drawing.Point(85, 89)
+        Me.HargaTextBox.Location = New System.Drawing.Point(90, 110)
         Me.HargaTextBox.Name = "HargaTextBox"
         Me.HargaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.HargaTextBox.TabIndex = 7
@@ -199,11 +200,23 @@ Partial Class Barang
         Me.Button5.Text = "Keluar"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(334, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(164, 31)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Data Barang"
+        '
         'Barang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 286)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -241,4 +254,5 @@ Partial Class Barang
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
