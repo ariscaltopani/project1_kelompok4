@@ -23,29 +23,29 @@ Partial Class Customer
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Customer))
         Dim Id_PembeliLabel As System.Windows.Forms.Label
         Dim AlamatLabel As System.Windows.Forms.Label
         Dim No__TelpLabel As System.Windows.Forms.Label
         Dim NamaLabel As System.Windows.Forms.Label
         Dim Sales_has_barang_sales_NIKLabel As System.Windows.Forms.Label
         Dim Sales_has_barang_barang_Kode_BarangLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Customer))
         Me.Kelompok2DataSet = New Aplikasi_penjualan_HP.kelompok2DataSet()
         Me.CustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CustomerTableAdapter = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.customerTableAdapter()
         Me.TableAdapterManager = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager()
         Me.CustomerBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.CustomerBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.CustomerDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -79,6 +79,60 @@ Partial Class Customer
         CType(Me.CustomerDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'Id_PembeliLabel
+        '
+        Id_PembeliLabel.AutoSize = True
+        Id_PembeliLabel.Location = New System.Drawing.Point(12, 62)
+        Id_PembeliLabel.Name = "Id_PembeliLabel"
+        Id_PembeliLabel.Size = New System.Drawing.Size(59, 13)
+        Id_PembeliLabel.TabIndex = 2
+        Id_PembeliLabel.Text = "Id Pembeli:"
+        '
+        'AlamatLabel
+        '
+        AlamatLabel.AutoSize = True
+        AlamatLabel.Location = New System.Drawing.Point(12, 88)
+        AlamatLabel.Name = "AlamatLabel"
+        AlamatLabel.Size = New System.Drawing.Size(42, 13)
+        AlamatLabel.TabIndex = 4
+        AlamatLabel.Text = "Alamat:"
+        '
+        'No__TelpLabel
+        '
+        No__TelpLabel.AutoSize = True
+        No__TelpLabel.Location = New System.Drawing.Point(12, 114)
+        No__TelpLabel.Name = "No__TelpLabel"
+        No__TelpLabel.Size = New System.Drawing.Size(51, 13)
+        No__TelpLabel.TabIndex = 6
+        No__TelpLabel.Text = "No  Telp:"
+        '
+        'NamaLabel
+        '
+        NamaLabel.AutoSize = True
+        NamaLabel.Location = New System.Drawing.Point(12, 140)
+        NamaLabel.Name = "NamaLabel"
+        NamaLabel.Size = New System.Drawing.Size(38, 13)
+        NamaLabel.TabIndex = 8
+        NamaLabel.Text = "Nama:"
+        '
+        'Sales_has_barang_sales_NIKLabel
+        '
+        Sales_has_barang_sales_NIKLabel.AutoSize = True
+        Sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(12, 166)
+        Sales_has_barang_sales_NIKLabel.Name = "Sales_has_barang_sales_NIKLabel"
+        Sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(138, 13)
+        Sales_has_barang_sales_NIKLabel.TabIndex = 10
+        Sales_has_barang_sales_NIKLabel.Text = "sales has barang sales NIK:"
+        '
+        'Sales_has_barang_barang_Kode_BarangLabel
+        '
+        Sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
+        Sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(12, 192)
+        Sales_has_barang_barang_Kode_BarangLabel.Name = "Sales_has_barang_barang_Kode_BarangLabel"
+        Sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(191, 13)
+        Sales_has_barang_barang_Kode_BarangLabel.TabIndex = 12
+        Sales_has_barang_barang_Kode_BarangLabel.Text = "sales has barang barang Kode Barang:"
         '
         'Kelompok2DataSet
         '
@@ -122,6 +176,31 @@ Partial Class Customer
         Me.CustomerBindingNavigator.TabIndex = 0
         Me.CustomerBindingNavigator.Text = "BindingNavigator1"
         '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(36, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        '
         'BindingNavigatorMoveFirstItem
         '
         Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -154,17 +233,10 @@ Partial Class Customer
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(36, 13)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -172,7 +244,7 @@ Partial Class Customer
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -181,38 +253,20 @@ Partial Class Customer
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'CustomerBindingNavigatorSaveItem
         '
         Me.CustomerBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.CustomerBindingNavigatorSaveItem.Image = CType(resources.GetObject("CustomerBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.CustomerBindingNavigatorSaveItem.Name = "CustomerBindingNavigatorSaveItem"
-        Me.CustomerBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.CustomerBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.CustomerBindingNavigatorSaveItem.Text = "Save Data"
         '
         'CustomerDataGridView
@@ -262,15 +316,6 @@ Partial Class Customer
         Me.DataGridViewTextBoxColumn6.HeaderText = "sales_has_barang_barang_Kode Barang"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
-        'Id_PembeliLabel
-        '
-        Id_PembeliLabel.AutoSize = True
-        Id_PembeliLabel.Location = New System.Drawing.Point(12, 62)
-        Id_PembeliLabel.Name = "Id_PembeliLabel"
-        Id_PembeliLabel.Size = New System.Drawing.Size(59, 13)
-        Id_PembeliLabel.TabIndex = 2
-        Id_PembeliLabel.Text = "Id Pembeli:"
-        '
         'Id_PembeliTextBox
         '
         Me.Id_PembeliTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "Id Pembeli", True))
@@ -278,15 +323,6 @@ Partial Class Customer
         Me.Id_PembeliTextBox.Name = "Id_PembeliTextBox"
         Me.Id_PembeliTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Id_PembeliTextBox.TabIndex = 3
-        '
-        'AlamatLabel
-        '
-        AlamatLabel.AutoSize = True
-        AlamatLabel.Location = New System.Drawing.Point(12, 88)
-        AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(42, 13)
-        AlamatLabel.TabIndex = 4
-        AlamatLabel.Text = "Alamat:"
         '
         'AlamatTextBox
         '
@@ -296,15 +332,6 @@ Partial Class Customer
         Me.AlamatTextBox.Size = New System.Drawing.Size(100, 20)
         Me.AlamatTextBox.TabIndex = 5
         '
-        'No__TelpLabel
-        '
-        No__TelpLabel.AutoSize = True
-        No__TelpLabel.Location = New System.Drawing.Point(12, 114)
-        No__TelpLabel.Name = "No__TelpLabel"
-        No__TelpLabel.Size = New System.Drawing.Size(51, 13)
-        No__TelpLabel.TabIndex = 6
-        No__TelpLabel.Text = "No  Telp:"
-        '
         'No__TelpTextBox
         '
         Me.No__TelpTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "No_ Telp", True))
@@ -312,15 +339,6 @@ Partial Class Customer
         Me.No__TelpTextBox.Name = "No__TelpTextBox"
         Me.No__TelpTextBox.Size = New System.Drawing.Size(100, 20)
         Me.No__TelpTextBox.TabIndex = 7
-        '
-        'NamaLabel
-        '
-        NamaLabel.AutoSize = True
-        NamaLabel.Location = New System.Drawing.Point(12, 140)
-        NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(38, 13)
-        NamaLabel.TabIndex = 8
-        NamaLabel.Text = "Nama:"
         '
         'NamaTextBox
         '
@@ -330,15 +348,6 @@ Partial Class Customer
         Me.NamaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NamaTextBox.TabIndex = 9
         '
-        'Sales_has_barang_sales_NIKLabel
-        '
-        Sales_has_barang_sales_NIKLabel.AutoSize = True
-        Sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(12, 166)
-        Sales_has_barang_sales_NIKLabel.Name = "Sales_has_barang_sales_NIKLabel"
-        Sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(138, 13)
-        Sales_has_barang_sales_NIKLabel.TabIndex = 10
-        Sales_has_barang_sales_NIKLabel.Text = "sales has barang sales NIK:"
-        '
         'Sales_has_barang_sales_NIKTextBox
         '
         Me.Sales_has_barang_sales_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "sales_has_barang_sales_NIK", True))
@@ -346,15 +355,6 @@ Partial Class Customer
         Me.Sales_has_barang_sales_NIKTextBox.Name = "Sales_has_barang_sales_NIKTextBox"
         Me.Sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Sales_has_barang_sales_NIKTextBox.TabIndex = 11
-        '
-        'Sales_has_barang_barang_Kode_BarangLabel
-        '
-        Sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
-        Sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(12, 192)
-        Sales_has_barang_barang_Kode_BarangLabel.Name = "Sales_has_barang_barang_Kode_BarangLabel"
-        Sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(191, 13)
-        Sales_has_barang_barang_Kode_BarangLabel.TabIndex = 12
-        Sales_has_barang_barang_Kode_BarangLabel.Text = "sales has barang barang Kode Barang:"
         '
         'Sales_has_barang_barang_Kode_BarangTextBox
         '

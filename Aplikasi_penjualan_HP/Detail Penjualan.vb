@@ -14,4 +14,14 @@
         Me.Data_transaksiTableAdapter.Fill(Me.Kelompok2DataSet.data_transaksi)
 
     End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Me.Hide()
+        Form2.Show()
+    End Sub
+
+    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
+        Me.Hide()
+        Form2.Show()
+    End Sub
 End Class
