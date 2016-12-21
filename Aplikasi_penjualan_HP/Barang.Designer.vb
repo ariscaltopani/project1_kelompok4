@@ -110,7 +110,7 @@ Partial Class Barang
         Me.BarangDataGridView.DataSource = Me.BarangBindingSource
         Me.BarangDataGridView.Location = New System.Drawing.Point(221, 58)
         Me.BarangDataGridView.Name = "BarangDataGridView"
-        Me.BarangDataGridView.Size = New System.Drawing.Size(468, 133)
+        Me.BarangDataGridView.Size = New System.Drawing.Size(354, 133)
         Me.BarangDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1

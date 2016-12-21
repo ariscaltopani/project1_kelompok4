@@ -25,4 +25,10 @@
         Karyawan.Show()
 
     End Sub
+
+    Private Sub CustomerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CustomerToolStripMenuItem.Click
+        Me.Hide()
+        Customer.Show()
+
+    End Sub
 End Class

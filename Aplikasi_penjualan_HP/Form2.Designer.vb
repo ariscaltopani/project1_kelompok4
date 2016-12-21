@@ -24,11 +24,12 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.DataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DetailPenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DetailPenjualanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.StaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KaryawanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TentangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DetailPenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DetailPenjualanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,29 +44,10 @@ Partial Class Form2
         '
         'DataToolStripMenuItem
         '
-        Me.DataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DetailPenjualanToolStripMenuItem, Me.DetailPenjualanToolStripMenuItem1})
+        Me.DataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DetailPenjualanToolStripMenuItem, Me.DetailPenjualanToolStripMenuItem1, Me.CustomerToolStripMenuItem})
         Me.DataToolStripMenuItem.Name = "DataToolStripMenuItem"
         Me.DataToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.DataToolStripMenuItem.Text = "Data"
-        '
-        'StaffToolStripMenuItem
-        '
-        Me.StaffToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KaryawanToolStripMenuItem})
-        Me.StaffToolStripMenuItem.Name = "StaffToolStripMenuItem"
-        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
-        Me.StaffToolStripMenuItem.Text = "Staff"
-        '
-        'KaryawanToolStripMenuItem
-        '
-        Me.KaryawanToolStripMenuItem.Name = "KaryawanToolStripMenuItem"
-        Me.KaryawanToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.KaryawanToolStripMenuItem.Text = "Karyawan"
-        '
-        'TentangToolStripMenuItem
-        '
-        Me.TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
-        Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-        Me.TentangToolStripMenuItem.Text = "Tentang"
         '
         'DetailPenjualanToolStripMenuItem
         '
@@ -78,6 +60,31 @@ Partial Class Form2
         Me.DetailPenjualanToolStripMenuItem1.Name = "DetailPenjualanToolStripMenuItem1"
         Me.DetailPenjualanToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.DetailPenjualanToolStripMenuItem1.Text = "Detail Penjualan"
+        '
+        'StaffToolStripMenuItem
+        '
+        Me.StaffToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KaryawanToolStripMenuItem})
+        Me.StaffToolStripMenuItem.Name = "StaffToolStripMenuItem"
+        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.StaffToolStripMenuItem.Text = "Staff"
+        '
+        'KaryawanToolStripMenuItem
+        '
+        Me.KaryawanToolStripMenuItem.Name = "KaryawanToolStripMenuItem"
+        Me.KaryawanToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.KaryawanToolStripMenuItem.Text = "Karyawan"
+        '
+        'TentangToolStripMenuItem
+        '
+        Me.TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
+        Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.TentangToolStripMenuItem.Text = "Tentang"
+        '
+        'CustomerToolStripMenuItem
+        '
+        Me.CustomerToolStripMenuItem.Name = "CustomerToolStripMenuItem"
+        Me.CustomerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CustomerToolStripMenuItem.Text = "Customer"
         '
         'Form2
         '
@@ -101,4 +108,5 @@ Partial Class Form2
     Friend WithEvents TentangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DetailPenjualanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DetailPenjualanToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CustomerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

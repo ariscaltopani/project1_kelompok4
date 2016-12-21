@@ -83,6 +83,12 @@
     <Compile Include="Barang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Customer.Designer.vb">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Detail Penjualan.Designer.vb">
       <DependentUpon>Detail Penjualan.vb</DependentUpon>
     </Compile>
@@ -132,6 +138,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Barang.resx">
       <DependentUpon>Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Detail Penjualan.resx">
       <DependentUpon>Detail Penjualan.vb</DependentUpon>

@@ -92,7 +92,7 @@ Partial Class Detail_Penjualan
         'Customer_Id_PembeliLabel
         '
         Customer_Id_PembeliLabel.AutoSize = True
-        Customer_Id_PembeliLabel.Location = New System.Drawing.Point(12, 147)
+        Customer_Id_PembeliLabel.Location = New System.Drawing.Point(14, 126)
         Customer_Id_PembeliLabel.Name = "Customer_Id_PembeliLabel"
         Customer_Id_PembeliLabel.Size = New System.Drawing.Size(105, 13)
         Customer_Id_PembeliLabel.TabIndex = 2
@@ -101,7 +101,7 @@ Partial Class Detail_Penjualan
         'Customer_sales_has_barang_sales_NIKLabel
         '
         Customer_sales_has_barang_sales_NIKLabel.AutoSize = True
-        Customer_sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(12, 186)
+        Customer_sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(14, 165)
         Customer_sales_has_barang_sales_NIKLabel.Name = "Customer_sales_has_barang_sales_NIKLabel"
         Customer_sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(184, 13)
         Customer_sales_has_barang_sales_NIKLabel.TabIndex = 4
@@ -110,7 +110,7 @@ Partial Class Detail_Penjualan
         'Customer_sales_has_barang_barang_Kode_BarangLabel
         '
         Customer_sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
-        Customer_sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(12, 225)
+        Customer_sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(14, 204)
         Customer_sales_has_barang_barang_Kode_BarangLabel.Name = "Customer_sales_has_barang_barang_Kode_BarangLabel"
         Customer_sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(237, 13)
         Customer_sales_has_barang_barang_Kode_BarangLabel.TabIndex = 6
@@ -119,7 +119,7 @@ Partial Class Detail_Penjualan
         'Sales_NIKLabel
         '
         Sales_NIKLabel.AutoSize = True
-        Sales_NIKLabel.Location = New System.Drawing.Point(12, 325)
+        Sales_NIKLabel.Location = New System.Drawing.Point(14, 304)
         Sales_NIKLabel.Name = "Sales_NIKLabel"
         Sales_NIKLabel.Size = New System.Drawing.Size(55, 13)
         Sales_NIKLabel.TabIndex = 9
@@ -128,7 +128,7 @@ Partial Class Detail_Penjualan
         'Barang_Kode_BarangLabel
         '
         Barang_Kode_BarangLabel.AutoSize = True
-        Barang_Kode_BarangLabel.Location = New System.Drawing.Point(12, 351)
+        Barang_Kode_BarangLabel.Location = New System.Drawing.Point(14, 330)
         Barang_Kode_BarangLabel.Name = "Barang_Kode_BarangLabel"
         Barang_Kode_BarangLabel.Size = New System.Drawing.Size(108, 13)
         Barang_Kode_BarangLabel.TabIndex = 11
@@ -279,7 +279,7 @@ Partial Class Detail_Penjualan
         Me.Data_transaksiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Data_transaksiDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.Data_transaksiDataGridView.DataSource = Me.Data_transaksiBindingSource
-        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(255, 121)
+        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(257, 100)
         Me.Data_transaksiDataGridView.Name = "Data_transaksiDataGridView"
         Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(350, 140)
         Me.Data_transaksiDataGridView.TabIndex = 1
@@ -305,7 +305,7 @@ Partial Class Detail_Penjualan
         'Customer_Id_PembeliTextBox
         '
         Me.Customer_Id_PembeliTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Data_transaksiBindingSource, "customer_Id Pembeli", True))
-        Me.Customer_Id_PembeliTextBox.Location = New System.Drawing.Point(15, 163)
+        Me.Customer_Id_PembeliTextBox.Location = New System.Drawing.Point(17, 142)
         Me.Customer_Id_PembeliTextBox.Name = "Customer_Id_PembeliTextBox"
         Me.Customer_Id_PembeliTextBox.Size = New System.Drawing.Size(181, 20)
         Me.Customer_Id_PembeliTextBox.TabIndex = 3
@@ -313,7 +313,7 @@ Partial Class Detail_Penjualan
         'Customer_sales_has_barang_sales_NIKTextBox
         '
         Me.Customer_sales_has_barang_sales_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Data_transaksiBindingSource, "customer_sales_has_barang_sales_NIK", True))
-        Me.Customer_sales_has_barang_sales_NIKTextBox.Location = New System.Drawing.Point(15, 202)
+        Me.Customer_sales_has_barang_sales_NIKTextBox.Location = New System.Drawing.Point(17, 181)
         Me.Customer_sales_has_barang_sales_NIKTextBox.Name = "Customer_sales_has_barang_sales_NIKTextBox"
         Me.Customer_sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(181, 20)
         Me.Customer_sales_has_barang_sales_NIKTextBox.TabIndex = 5
@@ -321,7 +321,7 @@ Partial Class Detail_Penjualan
         'Customer_sales_has_barang_barang_Kode_BarangTextBox
         '
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Data_transaksiBindingSource, "customer_sales_has_barang_barang_Kode Barang", True))
-        Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Location = New System.Drawing.Point(15, 241)
+        Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Location = New System.Drawing.Point(17, 220)
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Name = "Customer_sales_has_barang_barang_Kode_BarangTextBox"
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Size = New System.Drawing.Size(234, 20)
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.TabIndex = 7
@@ -337,7 +337,7 @@ Partial Class Detail_Penjualan
         Me.Sales_has_barangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Sales_has_barangDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.Sales_has_barangDataGridView.DataSource = Me.Sales_has_barangBindingSource
-        Me.Sales_has_barangDataGridView.Location = New System.Drawing.Point(255, 309)
+        Me.Sales_has_barangDataGridView.Location = New System.Drawing.Point(257, 288)
         Me.Sales_has_barangDataGridView.Name = "Sales_has_barangDataGridView"
         Me.Sales_has_barangDataGridView.Size = New System.Drawing.Size(350, 131)
         Me.Sales_has_barangDataGridView.TabIndex = 8
@@ -357,7 +357,7 @@ Partial Class Detail_Penjualan
         'Sales_NIKTextBox
         '
         Me.Sales_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Sales_has_barangBindingSource, "sales_NIK", True))
-        Me.Sales_NIKTextBox.Location = New System.Drawing.Point(126, 322)
+        Me.Sales_NIKTextBox.Location = New System.Drawing.Point(128, 301)
         Me.Sales_NIKTextBox.Name = "Sales_NIKTextBox"
         Me.Sales_NIKTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Sales_NIKTextBox.TabIndex = 10
@@ -365,7 +365,7 @@ Partial Class Detail_Penjualan
         'Barang_Kode_BarangTextBox
         '
         Me.Barang_Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Sales_has_barangBindingSource, "barang_Kode Barang", True))
-        Me.Barang_Kode_BarangTextBox.Location = New System.Drawing.Point(126, 348)
+        Me.Barang_Kode_BarangTextBox.Location = New System.Drawing.Point(128, 327)
         Me.Barang_Kode_BarangTextBox.Name = "Barang_Kode_BarangTextBox"
         Me.Barang_Kode_BarangTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Barang_Kode_BarangTextBox.TabIndex = 12
@@ -375,7 +375,7 @@ Partial Class Detail_Penjualan
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(353, 46)
+        Me.Label1.Location = New System.Drawing.Point(355, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(197, 31)
         Me.Label1.TabIndex = 13
@@ -388,7 +388,7 @@ Partial Class Detail_Penjualan
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(611, 106)
+        Me.GroupBox1.Location = New System.Drawing.Point(613, 85)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(220, 155)
         Me.GroupBox1.TabIndex = 24
@@ -447,7 +447,7 @@ Partial Class Detail_Penjualan
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.Button7)
         Me.GroupBox2.Controls.Add(Me.Button6)
-        Me.GroupBox2.Location = New System.Drawing.Point(617, 294)
+        Me.GroupBox2.Location = New System.Drawing.Point(619, 273)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(220, 152)
         Me.GroupBox2.TabIndex = 25
