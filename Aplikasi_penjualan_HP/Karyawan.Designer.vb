@@ -27,11 +27,11 @@ Partial Class Karyawan
         Dim AlamatLabel As System.Windows.Forms.Label
         Dim NamaLabel As System.Windows.Forms.Label
         Dim No__TelpLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Karyawan))
         Me.Kelompok2DataSet = New Aplikasi_penjualan_HP.kelompok2DataSet()
         Me.SalesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SalesTableAdapter = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.salesTableAdapter()
         Me.TableAdapterManager = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager()
-        Me.SalesBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.SalesDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -53,9 +53,44 @@ Partial Class Karyawan
         No__TelpLabel = New System.Windows.Forms.Label()
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SalesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'NIKLabel
+        '
+        NIKLabel.AutoSize = True
+        NIKLabel.Location = New System.Drawing.Point(569, 86)
+        NIKLabel.Name = "NIKLabel"
+        NIKLabel.Size = New System.Drawing.Size(36, 14)
+        NIKLabel.TabIndex = 8
+        NIKLabel.Text = "NIK:"
+        '
+        'AlamatLabel
+        '
+        AlamatLabel.AutoSize = True
+        AlamatLabel.Location = New System.Drawing.Point(569, 114)
+        AlamatLabel.Name = "AlamatLabel"
+        AlamatLabel.Size = New System.Drawing.Size(48, 14)
+        AlamatLabel.TabIndex = 10
+        AlamatLabel.Text = "Alamat:"
+        '
+        'NamaLabel
+        '
+        NamaLabel.AutoSize = True
+        NamaLabel.Location = New System.Drawing.Point(569, 142)
+        NamaLabel.Name = "NamaLabel"
+        NamaLabel.Size = New System.Drawing.Size(41, 14)
+        NamaLabel.TabIndex = 12
+        NamaLabel.Text = "Nama:"
+        '
+        'No__TelpLabel
+        '
+        No__TelpLabel.AutoSize = True
+        No__TelpLabel.Location = New System.Drawing.Point(569, 170)
+        No__TelpLabel.Name = "No__TelpLabel"
+        No__TelpLabel.Size = New System.Drawing.Size(58, 14)
+        No__TelpLabel.TabIndex = 14
+        No__TelpLabel.Text = "No  Telp:"
         '
         'Kelompok2DataSet
         '
@@ -81,32 +116,15 @@ Partial Class Karyawan
         Me.TableAdapterManager.salesTableAdapter = Me.SalesTableAdapter
         Me.TableAdapterManager.UpdateOrder = Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'SalesBindingNavigator
-        '
-        Me.SalesBindingNavigator.AddNewItem = Nothing
-        Me.SalesBindingNavigator.BindingSource = Me.SalesBindingSource
-        Me.SalesBindingNavigator.CountItem = Nothing
-        Me.SalesBindingNavigator.DeleteItem = Nothing
-        Me.SalesBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.SalesBindingNavigator.MoveFirstItem = Nothing
-        Me.SalesBindingNavigator.MoveLastItem = Nothing
-        Me.SalesBindingNavigator.MoveNextItem = Nothing
-        Me.SalesBindingNavigator.MovePreviousItem = Nothing
-        Me.SalesBindingNavigator.Name = "SalesBindingNavigator"
-        Me.SalesBindingNavigator.PositionItem = Nothing
-        Me.SalesBindingNavigator.Size = New System.Drawing.Size(847, 25)
-        Me.SalesBindingNavigator.TabIndex = 0
-        Me.SalesBindingNavigator.Text = "BindingNavigator1"
-        '
         'SalesDataGridView
         '
         Me.SalesDataGridView.AutoGenerateColumns = False
         Me.SalesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.SalesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.SalesDataGridView.DataSource = Me.SalesBindingSource
-        Me.SalesDataGridView.Location = New System.Drawing.Point(11, 76)
+        Me.SalesDataGridView.Location = New System.Drawing.Point(13, 82)
         Me.SalesDataGridView.Name = "SalesDataGridView"
-        Me.SalesDataGridView.Size = New System.Drawing.Size(445, 220)
+        Me.SalesDataGridView.Size = New System.Drawing.Size(519, 237)
         Me.SalesDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -135,133 +153,103 @@ Partial Class Karyawan
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(554, 222)
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button1.Location = New System.Drawing.Point(646, 239)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(87, 25)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Hapus"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(473, 222)
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button2.Location = New System.Drawing.Point(552, 239)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(87, 25)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Tambah"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(635, 222)
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button3.Location = New System.Drawing.Point(741, 239)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(87, 25)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Simpan"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(589, 251)
+        Me.Button4.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button4.Location = New System.Drawing.Point(687, 270)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(87, 25)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Edit"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(508, 251)
+        Me.Button5.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button5.Location = New System.Drawing.Point(593, 270)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(87, 25)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Keluar"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(274, 25)
+        Me.Label1.Location = New System.Drawing.Point(359, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(200, 31)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Data Karyawan"
         '
-        'NIKLabel
-        '
-        NIKLabel.AutoSize = True
-        NIKLabel.Location = New System.Drawing.Point(488, 80)
-        NIKLabel.Name = "NIKLabel"
-        NIKLabel.Size = New System.Drawing.Size(28, 13)
-        NIKLabel.TabIndex = 8
-        NIKLabel.Text = "NIK:"
-        '
         'NIKTextBox
         '
         Me.NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SalesBindingSource, "NIK", True))
-        Me.NIKTextBox.Location = New System.Drawing.Point(545, 77)
+        Me.NIKTextBox.Location = New System.Drawing.Point(636, 83)
         Me.NIKTextBox.Name = "NIKTextBox"
-        Me.NIKTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NIKTextBox.Size = New System.Drawing.Size(116, 21)
         Me.NIKTextBox.TabIndex = 9
-        '
-        'AlamatLabel
-        '
-        AlamatLabel.AutoSize = True
-        AlamatLabel.Location = New System.Drawing.Point(488, 106)
-        AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(42, 13)
-        AlamatLabel.TabIndex = 10
-        AlamatLabel.Text = "Alamat:"
         '
         'AlamatTextBox
         '
         Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SalesBindingSource, "Alamat", True))
-        Me.AlamatTextBox.Location = New System.Drawing.Point(545, 103)
+        Me.AlamatTextBox.Location = New System.Drawing.Point(636, 111)
         Me.AlamatTextBox.Name = "AlamatTextBox"
-        Me.AlamatTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.AlamatTextBox.Size = New System.Drawing.Size(116, 21)
         Me.AlamatTextBox.TabIndex = 11
-        '
-        'NamaLabel
-        '
-        NamaLabel.AutoSize = True
-        NamaLabel.Location = New System.Drawing.Point(488, 132)
-        NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(38, 13)
-        NamaLabel.TabIndex = 12
-        NamaLabel.Text = "Nama:"
         '
         'NamaTextBox
         '
         Me.NamaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SalesBindingSource, "Nama", True))
-        Me.NamaTextBox.Location = New System.Drawing.Point(545, 129)
+        Me.NamaTextBox.Location = New System.Drawing.Point(636, 139)
         Me.NamaTextBox.Name = "NamaTextBox"
-        Me.NamaTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NamaTextBox.Size = New System.Drawing.Size(116, 21)
         Me.NamaTextBox.TabIndex = 13
-        '
-        'No__TelpLabel
-        '
-        No__TelpLabel.AutoSize = True
-        No__TelpLabel.Location = New System.Drawing.Point(488, 158)
-        No__TelpLabel.Name = "No__TelpLabel"
-        No__TelpLabel.Size = New System.Drawing.Size(51, 13)
-        No__TelpLabel.TabIndex = 14
-        No__TelpLabel.Text = "No  Telp:"
         '
         'No__TelpTextBox
         '
         Me.No__TelpTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SalesBindingSource, "No_ Telp", True))
-        Me.No__TelpTextBox.Location = New System.Drawing.Point(545, 155)
+        Me.No__TelpTextBox.Location = New System.Drawing.Point(636, 167)
         Me.No__TelpTextBox.Name = "No__TelpTextBox"
-        Me.No__TelpTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.No__TelpTextBox.Size = New System.Drawing.Size(116, 21)
         Me.No__TelpTextBox.TabIndex = 15
         '
         'Karyawan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(847, 340)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(988, 366)
         Me.Controls.Add(NIKLabel)
         Me.Controls.Add(Me.NIKTextBox)
         Me.Controls.Add(AlamatLabel)
@@ -277,12 +265,11 @@ Partial Class Karyawan
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.SalesDataGridView)
-        Me.Controls.Add(Me.SalesBindingNavigator)
+        Me.Font = New System.Drawing.Font("Monotype Corsiva", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Karyawan"
         Me.Text = "Karyawan"
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SalesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -292,7 +279,6 @@ Partial Class Karyawan
     Friend WithEvents SalesBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents SalesTableAdapter As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.salesTableAdapter
     Friend WithEvents TableAdapterManager As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents SalesBindingNavigator As System.Windows.Forms.BindingNavigator
     Friend WithEvents SalesDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn

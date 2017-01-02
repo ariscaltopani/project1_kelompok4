@@ -34,19 +34,6 @@ Partial Class Detail_Penjualan
         Me.Data_transaksiTableAdapter = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.data_transaksiTableAdapter()
         Me.TableAdapterManager = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager()
         Me.Sales_has_barangTableAdapter = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.sales_has_barangTableAdapter()
-        Me.Data_transaksiBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.Data_transaksiBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.Data_transaksiDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -79,8 +66,6 @@ Partial Class Detail_Penjualan
         Barang_Kode_BarangLabel = New System.Windows.Forms.Label()
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Data_transaksiBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Data_transaksiBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Data_transaksiBindingNavigator.SuspendLayout()
         CType(Me.Data_transaksiDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Sales_has_barangBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Sales_has_barangDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,45 +76,50 @@ Partial Class Detail_Penjualan
         'Customer_Id_PembeliLabel
         '
         Customer_Id_PembeliLabel.AutoSize = True
-        Customer_Id_PembeliLabel.Location = New System.Drawing.Point(14, 126)
+        Customer_Id_PembeliLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Customer_Id_PembeliLabel.Location = New System.Drawing.Point(16, 136)
         Customer_Id_PembeliLabel.Name = "Customer_Id_PembeliLabel"
-        Customer_Id_PembeliLabel.Size = New System.Drawing.Size(105, 13)
+        Customer_Id_PembeliLabel.Size = New System.Drawing.Size(119, 14)
         Customer_Id_PembeliLabel.TabIndex = 2
         Customer_Id_PembeliLabel.Text = "customer Id Pembeli:"
         '
         'Customer_sales_has_barang_sales_NIKLabel
         '
         Customer_sales_has_barang_sales_NIKLabel.AutoSize = True
-        Customer_sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(14, 165)
+        Customer_sales_has_barang_sales_NIKLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Customer_sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(16, 178)
         Customer_sales_has_barang_sales_NIKLabel.Name = "Customer_sales_has_barang_sales_NIKLabel"
-        Customer_sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(184, 13)
+        Customer_sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(201, 14)
         Customer_sales_has_barang_sales_NIKLabel.TabIndex = 4
         Customer_sales_has_barang_sales_NIKLabel.Text = "customer sales has barang sales NIK:"
         '
         'Customer_sales_has_barang_barang_Kode_BarangLabel
         '
         Customer_sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
-        Customer_sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(14, 204)
+        Customer_sales_has_barang_barang_Kode_BarangLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Customer_sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(16, 220)
         Customer_sales_has_barang_barang_Kode_BarangLabel.Name = "Customer_sales_has_barang_barang_Kode_BarangLabel"
-        Customer_sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(237, 13)
+        Customer_sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(255, 14)
         Customer_sales_has_barang_barang_Kode_BarangLabel.TabIndex = 6
         Customer_sales_has_barang_barang_Kode_BarangLabel.Text = "customer sales has barang barang Kode Barang:"
         '
         'Sales_NIKLabel
         '
         Sales_NIKLabel.AutoSize = True
-        Sales_NIKLabel.Location = New System.Drawing.Point(14, 304)
+        Sales_NIKLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Sales_NIKLabel.Location = New System.Drawing.Point(16, 327)
         Sales_NIKLabel.Name = "Sales_NIKLabel"
-        Sales_NIKLabel.Size = New System.Drawing.Size(55, 13)
+        Sales_NIKLabel.Size = New System.Drawing.Size(64, 14)
         Sales_NIKLabel.TabIndex = 9
         Sales_NIKLabel.Text = "sales NIK:"
         '
         'Barang_Kode_BarangLabel
         '
         Barang_Kode_BarangLabel.AutoSize = True
-        Barang_Kode_BarangLabel.Location = New System.Drawing.Point(14, 330)
+        Barang_Kode_BarangLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Barang_Kode_BarangLabel.Location = New System.Drawing.Point(16, 355)
         Barang_Kode_BarangLabel.Name = "Barang_Kode_BarangLabel"
-        Barang_Kode_BarangLabel.Size = New System.Drawing.Size(108, 13)
+        Barang_Kode_BarangLabel.Size = New System.Drawing.Size(118, 14)
         Barang_Kode_BarangLabel.TabIndex = 11
         Barang_Kode_BarangLabel.Text = "barang Kode Barang:"
         '
@@ -161,126 +151,15 @@ Partial Class Detail_Penjualan
         '
         Me.Sales_has_barangTableAdapter.ClearBeforeFill = True
         '
-        'Data_transaksiBindingNavigator
-        '
-        Me.Data_transaksiBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.Data_transaksiBindingNavigator.BindingSource = Me.Data_transaksiBindingSource
-        Me.Data_transaksiBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.Data_transaksiBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.Data_transaksiBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.Data_transaksiBindingNavigatorSaveItem})
-        Me.Data_transaksiBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.Data_transaksiBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.Data_transaksiBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.Data_transaksiBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.Data_transaksiBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.Data_transaksiBindingNavigator.Name = "Data_transaksiBindingNavigator"
-        Me.Data_transaksiBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.Data_transaksiBindingNavigator.Size = New System.Drawing.Size(879, 25)
-        Me.Data_transaksiBindingNavigator.TabIndex = 0
-        Me.Data_transaksiBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(36, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 21)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveNextItem.Text = "Move next"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorMoveLastItem.Text = "Move last"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'Data_transaksiBindingNavigatorSaveItem
-        '
-        Me.Data_transaksiBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Data_transaksiBindingNavigatorSaveItem.Image = CType(resources.GetObject("Data_transaksiBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.Data_transaksiBindingNavigatorSaveItem.Name = "Data_transaksiBindingNavigatorSaveItem"
-        Me.Data_transaksiBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.Data_transaksiBindingNavigatorSaveItem.Text = "Save Data"
-        '
         'Data_transaksiDataGridView
         '
         Me.Data_transaksiDataGridView.AutoGenerateColumns = False
         Me.Data_transaksiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Data_transaksiDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.Data_transaksiDataGridView.DataSource = Me.Data_transaksiBindingSource
-        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(257, 100)
+        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(300, 108)
         Me.Data_transaksiDataGridView.Name = "Data_transaksiDataGridView"
-        Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(350, 140)
+        Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(408, 151)
         Me.Data_transaksiDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -304,25 +183,25 @@ Partial Class Detail_Penjualan
         'Customer_Id_PembeliTextBox
         '
         Me.Customer_Id_PembeliTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Data_transaksiBindingSource, "customer_Id Pembeli", True))
-        Me.Customer_Id_PembeliTextBox.Location = New System.Drawing.Point(17, 142)
+        Me.Customer_Id_PembeliTextBox.Location = New System.Drawing.Point(20, 153)
         Me.Customer_Id_PembeliTextBox.Name = "Customer_Id_PembeliTextBox"
-        Me.Customer_Id_PembeliTextBox.Size = New System.Drawing.Size(181, 20)
+        Me.Customer_Id_PembeliTextBox.Size = New System.Drawing.Size(210, 21)
         Me.Customer_Id_PembeliTextBox.TabIndex = 3
         '
         'Customer_sales_has_barang_sales_NIKTextBox
         '
         Me.Customer_sales_has_barang_sales_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Data_transaksiBindingSource, "customer_sales_has_barang_sales_NIK", True))
-        Me.Customer_sales_has_barang_sales_NIKTextBox.Location = New System.Drawing.Point(17, 181)
+        Me.Customer_sales_has_barang_sales_NIKTextBox.Location = New System.Drawing.Point(20, 195)
         Me.Customer_sales_has_barang_sales_NIKTextBox.Name = "Customer_sales_has_barang_sales_NIKTextBox"
-        Me.Customer_sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(181, 20)
+        Me.Customer_sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(210, 21)
         Me.Customer_sales_has_barang_sales_NIKTextBox.TabIndex = 5
         '
         'Customer_sales_has_barang_barang_Kode_BarangTextBox
         '
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Data_transaksiBindingSource, "customer_sales_has_barang_barang_Kode Barang", True))
-        Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Location = New System.Drawing.Point(17, 220)
+        Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Location = New System.Drawing.Point(20, 237)
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Name = "Customer_sales_has_barang_barang_Kode_BarangTextBox"
-        Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Size = New System.Drawing.Size(234, 20)
+        Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.Size = New System.Drawing.Size(272, 21)
         Me.Customer_sales_has_barang_barang_Kode_BarangTextBox.TabIndex = 7
         '
         'Sales_has_barangBindingSource
@@ -336,9 +215,9 @@ Partial Class Detail_Penjualan
         Me.Sales_has_barangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Sales_has_barangDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.Sales_has_barangDataGridView.DataSource = Me.Sales_has_barangBindingSource
-        Me.Sales_has_barangDataGridView.Location = New System.Drawing.Point(257, 288)
+        Me.Sales_has_barangDataGridView.Location = New System.Drawing.Point(300, 310)
         Me.Sales_has_barangDataGridView.Name = "Sales_has_barangDataGridView"
-        Me.Sales_has_barangDataGridView.Size = New System.Drawing.Size(350, 131)
+        Me.Sales_has_barangDataGridView.Size = New System.Drawing.Size(408, 141)
         Me.Sales_has_barangDataGridView.TabIndex = 8
         '
         'DataGridViewTextBoxColumn4
@@ -356,17 +235,17 @@ Partial Class Detail_Penjualan
         'Sales_NIKTextBox
         '
         Me.Sales_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Sales_has_barangBindingSource, "sales_NIK", True))
-        Me.Sales_NIKTextBox.Location = New System.Drawing.Point(128, 301)
+        Me.Sales_NIKTextBox.Location = New System.Drawing.Point(149, 324)
         Me.Sales_NIKTextBox.Name = "Sales_NIKTextBox"
-        Me.Sales_NIKTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Sales_NIKTextBox.Size = New System.Drawing.Size(116, 21)
         Me.Sales_NIKTextBox.TabIndex = 10
         '
         'Barang_Kode_BarangTextBox
         '
         Me.Barang_Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Sales_has_barangBindingSource, "barang_Kode Barang", True))
-        Me.Barang_Kode_BarangTextBox.Location = New System.Drawing.Point(128, 327)
+        Me.Barang_Kode_BarangTextBox.Location = New System.Drawing.Point(149, 352)
         Me.Barang_Kode_BarangTextBox.Name = "Barang_Kode_BarangTextBox"
-        Me.Barang_Kode_BarangTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Barang_Kode_BarangTextBox.Size = New System.Drawing.Size(116, 21)
         Me.Barang_Kode_BarangTextBox.TabIndex = 12
         '
         'Label1
@@ -374,7 +253,11 @@ Partial Class Detail_Penjualan
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
+<<<<<<< HEAD
         Me.Label1.Location = New System.Drawing.Point(320, 38)
+=======
+        Me.Label1.Location = New System.Drawing.Point(383, -2)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(251, 40)
         Me.Label1.TabIndex = 13
@@ -386,48 +269,80 @@ Partial Class Detail_Penjualan
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(613, 85)
+        Me.GroupBox1.Location = New System.Drawing.Point(715, 92)
         Me.GroupBox1.Name = "GroupBox1"
+<<<<<<< HEAD
         Me.GroupBox1.Size = New System.Drawing.Size(184, 116)
+=======
+        Me.GroupBox1.Size = New System.Drawing.Size(257, 167)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "A"
         '
+<<<<<<< HEAD
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(55, 75)
+=======
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button5.Location = New System.Drawing.Point(120, 108)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(87, 25)
+        Me.Button5.TabIndex = 23
+        Me.Button5.Text = "Keluar"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button4.Location = New System.Drawing.Point(120, 48)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(87, 25)
         Me.Button4.TabIndex = 22
         Me.Button4.Text = "Edit "
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
+<<<<<<< HEAD
         Me.Button3.Location = New System.Drawing.Point(98, 19)
+=======
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button3.Location = New System.Drawing.Point(7, 132)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(87, 25)
         Me.Button3.TabIndex = 21
         Me.Button3.Text = "Hapus"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
+<<<<<<< HEAD
         Me.Button2.Location = New System.Drawing.Point(55, 48)
+=======
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button2.Location = New System.Drawing.Point(7, 80)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(87, 25)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = "Simpan"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(6, 19)
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button1.Location = New System.Drawing.Point(7, 20)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(87, 25)
         Me.Button1.TabIndex = 19
         Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
@@ -435,64 +350,96 @@ Partial Class Detail_Penjualan
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.Button7)
         Me.GroupBox2.Controls.Add(Me.Button6)
-        Me.GroupBox2.Location = New System.Drawing.Point(619, 273)
+        Me.GroupBox2.Location = New System.Drawing.Point(722, 294)
         Me.GroupBox2.Name = "GroupBox2"
+<<<<<<< HEAD
         Me.GroupBox2.Size = New System.Drawing.Size(178, 115)
+=======
+        Me.GroupBox2.Size = New System.Drawing.Size(257, 164)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "B"
         '
         'Button10
         '
+<<<<<<< HEAD
         Me.Button10.Location = New System.Drawing.Point(747, 411)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 34)
+=======
+        Me.Button10.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button10.Location = New System.Drawing.Point(120, 102)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(87, 25)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button10.TabIndex = 28
         Me.Button10.Text = "Keluar"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'Button9
         '
+<<<<<<< HEAD
         Me.Button9.Location = New System.Drawing.Point(49, 76)
+=======
+        Me.Button9.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button9.Location = New System.Drawing.Point(120, 51)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.Size = New System.Drawing.Size(87, 25)
         Me.Button9.TabIndex = 27
         Me.Button9.Text = "Edit"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Button8
         '
+<<<<<<< HEAD
         Me.Button8.Location = New System.Drawing.Point(92, 15)
+=======
+        Me.Button8.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button8.Location = New System.Drawing.Point(7, 123)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.Size = New System.Drawing.Size(87, 25)
         Me.Button8.TabIndex = 26
         Me.Button8.Text = "Hapus"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'Button7
         '
+<<<<<<< HEAD
         Me.Button7.Location = New System.Drawing.Point(49, 47)
+=======
+        Me.Button7.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button7.Location = New System.Drawing.Point(7, 71)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.Size = New System.Drawing.Size(87, 25)
         Me.Button7.TabIndex = 25
         Me.Button7.Text = "Simpan"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(6, 15)
+        Me.Button6.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button6.Location = New System.Drawing.Point(7, 16)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.Size = New System.Drawing.Size(87, 25)
         Me.Button6.TabIndex = 24
         Me.Button6.Text = "Tambah"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Detail_Penjualan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(879, 533)
         Me.Controls.Add(Me.Button10)
+=======
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(1025, 574)
+>>>>>>> bd450883745bbf7ec76a6ec824620fc38f4a4f54
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
@@ -508,14 +455,11 @@ Partial Class Detail_Penjualan
         Me.Controls.Add(Customer_sales_has_barang_barang_Kode_BarangLabel)
         Me.Controls.Add(Me.Customer_sales_has_barang_barang_Kode_BarangTextBox)
         Me.Controls.Add(Me.Data_transaksiDataGridView)
-        Me.Controls.Add(Me.Data_transaksiBindingNavigator)
+        Me.Font = New System.Drawing.Font("Monotype Corsiva", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Detail_Penjualan"
         Me.Text = "Detail_Penjualan"
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Data_transaksiBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Data_transaksiBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Data_transaksiBindingNavigator.ResumeLayout(False)
-        Me.Data_transaksiBindingNavigator.PerformLayout()
         CType(Me.Data_transaksiDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Sales_has_barangBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Sales_has_barangDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -529,19 +473,6 @@ Partial Class Detail_Penjualan
     Friend WithEvents Data_transaksiBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Data_transaksiTableAdapter As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.data_transaksiTableAdapter
     Friend WithEvents TableAdapterManager As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents Data_transaksiBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents Data_transaksiBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents Data_transaksiDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
