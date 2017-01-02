@@ -1,6 +1,6 @@
 ﻿Public Class Detail_Penjualan
 
-    Private Sub Data_transaksiBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Data_transaksiBindingNavigatorSaveItem.Click
+    Private Sub Data_transaksiBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.Data_transaksiBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Kelompok2DataSet)
