@@ -1,6 +1,6 @@
 ﻿Public Class Customer
 
-    Private Sub CustomerBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CustomerBindingNavigatorSaveItem.Click
+    Private Sub CustomerBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Validate()
         Me.CustomerBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Kelompok2DataSet)
@@ -33,6 +33,10 @@
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub CustomerDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles CustomerDataGridView.CellContentClick
 
     End Sub
 End Class
