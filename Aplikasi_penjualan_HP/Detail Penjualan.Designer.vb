@@ -62,7 +62,6 @@ Partial Class Detail_Penjualan
         Me.Barang_Kode_BarangTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -373,40 +372,30 @@ Partial Class Detail_Penjualan
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(355, 25)
+        Me.Label1.Location = New System.Drawing.Point(320, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 31)
+        Me.Label1.Size = New System.Drawing.Size(251, 40)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Data Penjualan"
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Location = New System.Drawing.Point(613, 85)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(220, 155)
+        Me.GroupBox1.Size = New System.Drawing.Size(184, 116)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "A"
         '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(103, 100)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 23
-        Me.Button5.Text = "Keluar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(103, 45)
+        Me.Button4.Location = New System.Drawing.Point(55, 75)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 22
@@ -415,7 +404,7 @@ Partial Class Detail_Penjualan
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(6, 123)
+        Me.Button3.Location = New System.Drawing.Point(98, 19)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 21
@@ -424,7 +413,7 @@ Partial Class Detail_Penjualan
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(6, 74)
+        Me.Button2.Location = New System.Drawing.Point(55, 48)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 20
@@ -442,30 +431,29 @@ Partial Class Detail_Penjualan
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button10)
         Me.GroupBox2.Controls.Add(Me.Button9)
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.Button7)
         Me.GroupBox2.Controls.Add(Me.Button6)
         Me.GroupBox2.Location = New System.Drawing.Point(619, 273)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(220, 152)
+        Me.GroupBox2.Size = New System.Drawing.Size(178, 115)
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "B"
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(103, 95)
+        Me.Button10.Location = New System.Drawing.Point(747, 411)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 23)
+        Me.Button10.Size = New System.Drawing.Size(75, 34)
         Me.Button10.TabIndex = 28
         Me.Button10.Text = "Keluar"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(103, 47)
+        Me.Button9.Location = New System.Drawing.Point(49, 76)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 27
@@ -474,7 +462,7 @@ Partial Class Detail_Penjualan
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(6, 114)
+        Me.Button8.Location = New System.Drawing.Point(92, 15)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 26
@@ -483,7 +471,7 @@ Partial Class Detail_Penjualan
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(6, 66)
+        Me.Button7.Location = New System.Drawing.Point(49, 47)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 25
@@ -504,6 +492,7 @@ Partial Class Detail_Penjualan
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(879, 533)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
@@ -569,7 +558,6 @@ Partial Class Detail_Penjualan
     Friend WithEvents Barang_Kode_BarangTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button

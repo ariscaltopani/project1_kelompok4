@@ -68,11 +68,11 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(71, 19)
+        Me.Label4.Location = New System.Drawing.Point(95, 20)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(207, 34)
+        Me.Label4.Size = New System.Drawing.Size(165, 34)
         Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Login Anggota"
+        Me.Label4.Text = "Login Staff"
         '
         'Label3
         '
