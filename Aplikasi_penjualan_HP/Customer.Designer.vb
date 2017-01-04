@@ -69,60 +69,60 @@ Partial Class Customer
         'Id_PembeliLabel
         '
         Id_PembeliLabel.AutoSize = True
-        Id_PembeliLabel.Location = New System.Drawing.Point(16, 122)
+        Id_PembeliLabel.Location = New System.Drawing.Point(16, 78)
         Id_PembeliLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Id_PembeliLabel.Name = "Id_PembeliLabel"
-        Id_PembeliLabel.Size = New System.Drawing.Size(70, 15)
+        Id_PembeliLabel.Size = New System.Drawing.Size(83, 19)
         Id_PembeliLabel.TabIndex = 2
         Id_PembeliLabel.Text = "Id Pembeli:"
         '
         'AlamatLabel
         '
         AlamatLabel.AutoSize = True
-        AlamatLabel.Location = New System.Drawing.Point(16, 152)
+        AlamatLabel.Location = New System.Drawing.Point(15, 121)
         AlamatLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(50, 15)
+        AlamatLabel.Size = New System.Drawing.Size(59, 19)
         AlamatLabel.TabIndex = 4
         AlamatLabel.Text = "Alamat:"
         '
         'No__TelpLabel
         '
         No__TelpLabel.AutoSize = True
-        No__TelpLabel.Location = New System.Drawing.Point(16, 182)
+        No__TelpLabel.Location = New System.Drawing.Point(13, 159)
         No__TelpLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         No__TelpLabel.Name = "No__TelpLabel"
-        No__TelpLabel.Size = New System.Drawing.Size(60, 15)
+        No__TelpLabel.Size = New System.Drawing.Size(72, 19)
         No__TelpLabel.TabIndex = 6
         No__TelpLabel.Text = "No  Telp:"
         '
         'NamaLabel
         '
         NamaLabel.AutoSize = True
-        NamaLabel.Location = New System.Drawing.Point(16, 212)
+        NamaLabel.Location = New System.Drawing.Point(16, 201)
         NamaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(42, 15)
+        NamaLabel.Size = New System.Drawing.Size(50, 19)
         NamaLabel.TabIndex = 8
         NamaLabel.Text = "Nama:"
         '
         'Sales_has_barang_sales_NIKLabel
         '
         Sales_has_barang_sales_NIKLabel.AutoSize = True
-        Sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(16, 242)
+        Sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(15, 246)
         Sales_has_barang_sales_NIKLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Sales_has_barang_sales_NIKLabel.Name = "Sales_has_barang_sales_NIKLabel"
-        Sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(157, 15)
+        Sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(188, 19)
         Sales_has_barang_sales_NIKLabel.TabIndex = 10
         Sales_has_barang_sales_NIKLabel.Text = "sales has barang sales NIK:"
         '
         'Sales_has_barang_barang_Kode_BarangLabel
         '
         Sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
-        Sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(16, 272)
+        Sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(13, 282)
         Sales_has_barang_barang_Kode_BarangLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Sales_has_barang_barang_Kode_BarangLabel.Name = "Sales_has_barang_barang_Kode_BarangLabel"
-        Sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(214, 15)
+        Sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(252, 19)
         Sales_has_barang_barang_Kode_BarangLabel.TabIndex = 12
         Sales_has_barang_barang_Kode_BarangLabel.Text = "sales has barang barang Kode Barang:"
         '
@@ -156,10 +156,10 @@ Partial Class Customer
         Me.CustomerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CustomerDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.CustomerDataGridView.DataSource = Me.CustomerBindingSource
-        Me.CustomerDataGridView.Location = New System.Drawing.Point(19, 335)
-        Me.CustomerDataGridView.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.CustomerDataGridView.Location = New System.Drawing.Point(19, 340)
+        Me.CustomerDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CustomerDataGridView.Name = "CustomerDataGridView"
-        Me.CustomerDataGridView.Size = New System.Drawing.Size(858, 170)
+        Me.CustomerDataGridView.Size = New System.Drawing.Size(858, 116)
         Me.CustomerDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -201,55 +201,55 @@ Partial Class Customer
         'Id_PembeliTextBox
         '
         Me.Id_PembeliTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "Id Pembeli", True))
-        Me.Id_PembeliTextBox.Location = New System.Drawing.Point(279, 119)
-        Me.Id_PembeliTextBox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Id_PembeliTextBox.Location = New System.Drawing.Point(279, 78)
+        Me.Id_PembeliTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Id_PembeliTextBox.Name = "Id_PembeliTextBox"
-        Me.Id_PembeliTextBox.Size = New System.Drawing.Size(132, 22)
+        Me.Id_PembeliTextBox.Size = New System.Drawing.Size(132, 26)
         Me.Id_PembeliTextBox.TabIndex = 3
         '
         'AlamatTextBox
         '
         Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "Alamat", True))
-        Me.AlamatTextBox.Location = New System.Drawing.Point(279, 149)
-        Me.AlamatTextBox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.AlamatTextBox.Location = New System.Drawing.Point(279, 118)
+        Me.AlamatTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.AlamatTextBox.Name = "AlamatTextBox"
-        Me.AlamatTextBox.Size = New System.Drawing.Size(132, 22)
+        Me.AlamatTextBox.Size = New System.Drawing.Size(132, 26)
         Me.AlamatTextBox.TabIndex = 5
         '
         'No__TelpTextBox
         '
         Me.No__TelpTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "No_ Telp", True))
-        Me.No__TelpTextBox.Location = New System.Drawing.Point(279, 179)
-        Me.No__TelpTextBox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.No__TelpTextBox.Location = New System.Drawing.Point(279, 159)
+        Me.No__TelpTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.No__TelpTextBox.Name = "No__TelpTextBox"
-        Me.No__TelpTextBox.Size = New System.Drawing.Size(132, 22)
+        Me.No__TelpTextBox.Size = New System.Drawing.Size(132, 26)
         Me.No__TelpTextBox.TabIndex = 7
         '
         'NamaTextBox
         '
         Me.NamaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "Nama", True))
-        Me.NamaTextBox.Location = New System.Drawing.Point(279, 209)
-        Me.NamaTextBox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.NamaTextBox.Location = New System.Drawing.Point(279, 201)
+        Me.NamaTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.NamaTextBox.Name = "NamaTextBox"
-        Me.NamaTextBox.Size = New System.Drawing.Size(132, 22)
+        Me.NamaTextBox.Size = New System.Drawing.Size(132, 26)
         Me.NamaTextBox.TabIndex = 9
         '
         'Sales_has_barang_sales_NIKTextBox
         '
         Me.Sales_has_barang_sales_NIKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "sales_has_barang_sales_NIK", True))
         Me.Sales_has_barang_sales_NIKTextBox.Location = New System.Drawing.Point(279, 239)
-        Me.Sales_has_barang_sales_NIKTextBox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Sales_has_barang_sales_NIKTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Sales_has_barang_sales_NIKTextBox.Name = "Sales_has_barang_sales_NIKTextBox"
-        Me.Sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(132, 22)
+        Me.Sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(132, 26)
         Me.Sales_has_barang_sales_NIKTextBox.TabIndex = 11
         '
         'Sales_has_barang_barang_Kode_BarangTextBox
         '
         Me.Sales_has_barang_barang_Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "sales_has_barang_barang_Kode Barang", True))
-        Me.Sales_has_barang_barang_Kode_BarangTextBox.Location = New System.Drawing.Point(279, 269)
-        Me.Sales_has_barang_barang_Kode_BarangTextBox.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Sales_has_barang_barang_Kode_BarangTextBox.Location = New System.Drawing.Point(279, 279)
+        Me.Sales_has_barang_barang_Kode_BarangTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Sales_has_barang_barang_Kode_BarangTextBox.Name = "Sales_has_barang_barang_Kode_BarangTextBox"
-        Me.Sales_has_barang_barang_Kode_BarangTextBox.Size = New System.Drawing.Size(132, 22)
+        Me.Sales_has_barang_barang_Kode_BarangTextBox.Size = New System.Drawing.Size(132, 26)
         Me.Sales_has_barang_barang_Kode_BarangTextBox.TabIndex = 13
         '
         'GroupBox1
@@ -259,11 +259,11 @@ Partial Class Customer
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(483, 108)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(502, 78)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.GroupBox1.Size = New System.Drawing.Size(293, 179)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(293, 227)
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "A"
@@ -271,10 +271,10 @@ Partial Class Customer
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button5.Location = New System.Drawing.Point(137, 115)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button5.Location = New System.Drawing.Point(137, 146)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(100, 27)
+        Me.Button5.Size = New System.Drawing.Size(100, 34)
         Me.Button5.TabIndex = 23
         Me.Button5.Text = "Keluar"
         Me.Button5.UseVisualStyleBackColor = False
@@ -282,10 +282,10 @@ Partial Class Customer
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button4.Location = New System.Drawing.Point(137, 52)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button4.Location = New System.Drawing.Point(137, 66)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 27)
+        Me.Button4.Size = New System.Drawing.Size(100, 34)
         Me.Button4.TabIndex = 22
         Me.Button4.Text = "Edit "
         Me.Button4.UseVisualStyleBackColor = False
@@ -293,10 +293,10 @@ Partial Class Customer
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button3.Location = New System.Drawing.Point(8, 142)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button3.Location = New System.Drawing.Point(8, 180)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 27)
+        Me.Button3.Size = New System.Drawing.Size(100, 34)
         Me.Button3.TabIndex = 21
         Me.Button3.Text = "Hapus"
         Me.Button3.UseVisualStyleBackColor = False
@@ -304,10 +304,10 @@ Partial Class Customer
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button2.Location = New System.Drawing.Point(8, 85)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button2.Location = New System.Drawing.Point(8, 108)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 27)
+        Me.Button2.Size = New System.Drawing.Size(100, 34)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = "Simpan"
         Me.Button2.UseVisualStyleBackColor = False
@@ -315,10 +315,10 @@ Partial Class Customer
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button1.Location = New System.Drawing.Point(8, 22)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button1.Location = New System.Drawing.Point(8, 28)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 27)
+        Me.Button1.Size = New System.Drawing.Size(100, 34)
         Me.Button1.TabIndex = 19
         Me.Button1.Text = "Tambah"
         Me.Button1.UseVisualStyleBackColor = False
@@ -328,7 +328,7 @@ Partial Class Customer
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label1.Location = New System.Drawing.Point(356, 9)
+        Me.Label1.Location = New System.Drawing.Point(356, 11)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(164, 40)
@@ -337,10 +337,10 @@ Partial Class Customer
         '
         'Customer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(942, 517)
+        Me.ClientSize = New System.Drawing.Size(942, 494)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Id_PembeliLabel)
@@ -356,8 +356,8 @@ Partial Class Customer
         Me.Controls.Add(Sales_has_barang_barang_Kode_BarangLabel)
         Me.Controls.Add(Me.Sales_has_barang_barang_Kode_BarangTextBox)
         Me.Controls.Add(Me.CustomerDataGridView)
-        Me.Font = New System.Drawing.Font("Monotype Corsiva", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Customer"
         Me.Text = "Customer"
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).EndInit()

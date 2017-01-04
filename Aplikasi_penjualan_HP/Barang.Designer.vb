@@ -56,9 +56,9 @@ Partial Class Barang
         '
         Kode_BarangLabel.AutoSize = True
         Kode_BarangLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Kode_BarangLabel.Location = New System.Drawing.Point(12, 101)
+        Kode_BarangLabel.Location = New System.Drawing.Point(12, 130)
         Kode_BarangLabel.Name = "Kode_BarangLabel"
-        Kode_BarangLabel.Size = New System.Drawing.Size(79, 14)
+        Kode_BarangLabel.Size = New System.Drawing.Size(85, 18)
         Kode_BarangLabel.TabIndex = 2
         Kode_BarangLabel.Text = "Kode Barang:"
         '
@@ -66,9 +66,9 @@ Partial Class Barang
         '
         Merk_HPLabel.AutoSize = True
         Merk_HPLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Merk_HPLabel.Location = New System.Drawing.Point(12, 146)
+        Merk_HPLabel.Location = New System.Drawing.Point(12, 188)
         Merk_HPLabel.Name = "Merk_HPLabel"
-        Merk_HPLabel.Size = New System.Drawing.Size(60, 14)
+        Merk_HPLabel.Size = New System.Drawing.Size(63, 18)
         Merk_HPLabel.TabIndex = 4
         Merk_HPLabel.Text = "Merk HP:"
         '
@@ -76,9 +76,9 @@ Partial Class Barang
         '
         HargaLabel.AutoSize = True
         HargaLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        HargaLabel.Location = New System.Drawing.Point(14, 190)
+        HargaLabel.Location = New System.Drawing.Point(14, 244)
         HargaLabel.Name = "HargaLabel"
-        HargaLabel.Size = New System.Drawing.Size(43, 14)
+        HargaLabel.Size = New System.Drawing.Size(48, 18)
         HargaLabel.TabIndex = 6
         HargaLabel.Text = "Harga:"
         '
@@ -112,9 +112,10 @@ Partial Class Barang
         Me.BarangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BarangDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.BarangDataGridView.DataSource = Me.BarangBindingSource
-        Me.BarangDataGridView.Location = New System.Drawing.Point(258, 90)
+        Me.BarangDataGridView.Location = New System.Drawing.Point(258, 116)
+        Me.BarangDataGridView.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BarangDataGridView.Name = "BarangDataGridView"
-        Me.BarangDataGridView.Size = New System.Drawing.Size(413, 143)
+        Me.BarangDataGridView.Size = New System.Drawing.Size(524, 184)
         Me.BarangDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -138,33 +139,38 @@ Partial Class Barang
         'Kode_BarangTextBox
         '
         Me.Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BarangBindingSource, "Kode Barang", True))
-        Me.Kode_BarangTextBox.Location = New System.Drawing.Point(105, 94)
+        Me.Kode_BarangTextBox.Location = New System.Drawing.Point(105, 121)
+        Me.Kode_BarangTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Kode_BarangTextBox.Name = "Kode_BarangTextBox"
-        Me.Kode_BarangTextBox.Size = New System.Drawing.Size(116, 21)
+        Me.Kode_BarangTextBox.Size = New System.Drawing.Size(116, 24)
         Me.Kode_BarangTextBox.TabIndex = 3
         '
         'Merk_HPTextBox
         '
         Me.Merk_HPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BarangBindingSource, "Merk HP", True))
-        Me.Merk_HPTextBox.Location = New System.Drawing.Point(105, 139)
+        Me.Merk_HPTextBox.Location = New System.Drawing.Point(105, 179)
+        Me.Merk_HPTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Merk_HPTextBox.Name = "Merk_HPTextBox"
-        Me.Merk_HPTextBox.Size = New System.Drawing.Size(116, 21)
+        Me.Merk_HPTextBox.Size = New System.Drawing.Size(116, 24)
         Me.Merk_HPTextBox.TabIndex = 5
         '
         'HargaTextBox
         '
         Me.HargaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BarangBindingSource, "Harga", True))
-        Me.HargaTextBox.Location = New System.Drawing.Point(105, 183)
+        Me.HargaTextBox.Location = New System.Drawing.Point(105, 235)
+        Me.HargaTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.HargaTextBox.Name = "HargaTextBox"
-        Me.HargaTextBox.Size = New System.Drawing.Size(116, 21)
+        Me.HargaTextBox.Size = New System.Drawing.Size(116, 24)
         Me.HargaTextBox.TabIndex = 7
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button1.Location = New System.Drawing.Point(258, 250)
+        Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(258, 321)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 25)
+        Me.Button1.Size = New System.Drawing.Size(87, 32)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Hapus"
         Me.Button1.UseVisualStyleBackColor = False
@@ -172,9 +178,11 @@ Partial Class Barang
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button2.Location = New System.Drawing.Point(363, 250)
+        Me.Button2.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(363, 321)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(87, 25)
+        Me.Button2.Size = New System.Drawing.Size(87, 32)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Tambah"
         Me.Button2.UseVisualStyleBackColor = False
@@ -182,9 +190,11 @@ Partial Class Barang
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button3.Location = New System.Drawing.Point(472, 250)
+        Me.Button3.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(472, 321)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(87, 25)
+        Me.Button3.Size = New System.Drawing.Size(87, 32)
         Me.Button3.TabIndex = 10
         Me.Button3.Text = "Simpan"
         Me.Button3.UseVisualStyleBackColor = False
@@ -192,9 +202,10 @@ Partial Class Barang
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button4.Location = New System.Drawing.Point(583, 250)
+        Me.Button4.Location = New System.Drawing.Point(583, 321)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(87, 25)
+        Me.Button4.Size = New System.Drawing.Size(87, 32)
         Me.Button4.TabIndex = 11
         Me.Button4.Text = "Edit"
         Me.Button4.UseVisualStyleBackColor = False
@@ -202,9 +213,10 @@ Partial Class Barang
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button5.Location = New System.Drawing.Point(695, 250)
+        Me.Button5.Location = New System.Drawing.Point(695, 321)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(87, 25)
+        Me.Button5.Size = New System.Drawing.Size(87, 32)
         Me.Button5.TabIndex = 12
         Me.Button5.Text = "Keluar"
         Me.Button5.UseVisualStyleBackColor = False
@@ -214,7 +226,7 @@ Partial Class Barang
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(409, 35)
+        Me.Label1.Location = New System.Drawing.Point(357, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(164, 31)
         Me.Label1.TabIndex = 13
@@ -222,11 +234,11 @@ Partial Class Barang
         '
         'Barang
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(933, 308)
+        Me.ClientSize = New System.Drawing.Size(933, 396)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -240,7 +252,8 @@ Partial Class Barang
         Me.Controls.Add(HargaLabel)
         Me.Controls.Add(Me.HargaTextBox)
         Me.Controls.Add(Me.BarangDataGridView)
-        Me.Font = New System.Drawing.Font("Monotype Corsiva", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Barang"
         Me.Text = "Barang"
         CType(Me.Kelompok2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
