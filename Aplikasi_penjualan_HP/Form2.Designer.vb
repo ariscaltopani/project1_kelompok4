@@ -39,7 +39,7 @@ Partial Class Form2
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DataToolStripMenuItem, Me.StaffToolStripMenuItem, Me.TentangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(363, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(869, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -80,7 +80,7 @@ Partial Class Form2
         'DataStaffToolStripMenuItem
         '
         Me.DataStaffToolStripMenuItem.Name = "DataStaffToolStripMenuItem"
-        Me.DataStaffToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DataStaffToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.DataStaffToolStripMenuItem.Text = "Data_Staff"
         '
         'TentangToolStripMenuItem
@@ -95,7 +95,7 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(363, 210)
+        Me.ClientSize = New System.Drawing.Size(869, 272)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form2"

@@ -53,28 +53,30 @@ Partial Class Detail_Penjualan
         'Customer_Id_PembeliLabel
         '
         Customer_Id_PembeliLabel.AutoSize = True
-        Customer_Id_PembeliLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Customer_Id_PembeliLabel.BackColor = System.Drawing.Color.Transparent
         Customer_Id_PembeliLabel.Location = New System.Drawing.Point(14, 65)
         Customer_Id_PembeliLabel.Name = "Customer_Id_PembeliLabel"
-        Customer_Id_PembeliLabel.Size = New System.Drawing.Size(131, 18)
+        Customer_Id_PembeliLabel.Size = New System.Drawing.Size(131, 16)
         Customer_Id_PembeliLabel.TabIndex = 1
         Customer_Id_PembeliLabel.Text = "customer Id Pembeli:"
         '
         'Customer_sales_has_barang_sales_NIKLabel
         '
         Customer_sales_has_barang_sales_NIKLabel.AutoSize = True
+        Customer_sales_has_barang_sales_NIKLabel.BackColor = System.Drawing.Color.Transparent
         Customer_sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(14, 101)
         Customer_sales_has_barang_sales_NIKLabel.Name = "Customer_sales_has_barang_sales_NIKLabel"
-        Customer_sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(231, 18)
+        Customer_sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(231, 16)
         Customer_sales_has_barang_sales_NIKLabel.TabIndex = 3
         Customer_sales_has_barang_sales_NIKLabel.Text = "customer sales has barang sales NIK:"
         '
         'Customer_sales_has_barang_barang_Kode_BarangLabel
         '
         Customer_sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
+        Customer_sales_has_barang_barang_Kode_BarangLabel.BackColor = System.Drawing.Color.Transparent
         Customer_sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(14, 137)
         Customer_sales_has_barang_barang_Kode_BarangLabel.Name = "Customer_sales_has_barang_barang_Kode_BarangLabel"
-        Customer_sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(289, 18)
+        Customer_sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(289, 16)
         Customer_sales_has_barang_barang_Kode_BarangLabel.TabIndex = 5
         Customer_sales_has_barang_barang_Kode_BarangLabel.Text = "customer sales has barang barang Kode Barang:"
         '
@@ -135,10 +137,10 @@ Partial Class Detail_Penjualan
         Me.Data_transaksiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Data_transaksiDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.Data_transaksiDataGridView.DataSource = Me.Data_transaksiBindingSource
-        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(14, 195)
+        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(487, 56)
         Me.Data_transaksiDataGridView.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Data_transaksiDataGridView.Name = "Data_transaksiDataGridView"
-        Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(671, 206)
+        Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(404, 105)
         Me.Data_transaksiDataGridView.TabIndex = 7
         '
         'DataGridViewTextBoxColumn1
@@ -205,7 +207,7 @@ Partial Class Detail_Penjualan
         '
         'Detail_Penjualan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)

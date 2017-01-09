@@ -59,36 +59,44 @@ Partial Class Karyawan
         'NIKLabel
         '
         NIKLabel.AutoSize = True
+        NIKLabel.BackColor = System.Drawing.Color.Transparent
+        NIKLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         NIKLabel.Location = New System.Drawing.Point(23, 107)
         NIKLabel.Name = "NIKLabel"
-        NIKLabel.Size = New System.Drawing.Size(37, 18)
+        NIKLabel.Size = New System.Drawing.Size(37, 16)
         NIKLabel.TabIndex = 8
         NIKLabel.Text = "NIK:"
         '
         'AlamatLabel
         '
         AlamatLabel.AutoSize = True
+        AlamatLabel.BackColor = System.Drawing.Color.Transparent
+        AlamatLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         AlamatLabel.Location = New System.Drawing.Point(23, 143)
         AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(54, 18)
+        AlamatLabel.Size = New System.Drawing.Size(54, 16)
         AlamatLabel.TabIndex = 10
         AlamatLabel.Text = "Alamat:"
         '
         'NamaLabel
         '
         NamaLabel.AutoSize = True
+        NamaLabel.BackColor = System.Drawing.Color.Transparent
+        NamaLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         NamaLabel.Location = New System.Drawing.Point(23, 182)
         NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(46, 18)
+        NamaLabel.Size = New System.Drawing.Size(46, 16)
         NamaLabel.TabIndex = 12
         NamaLabel.Text = "Nama:"
         '
         'No__TelpLabel
         '
         No__TelpLabel.AutoSize = True
+        No__TelpLabel.BackColor = System.Drawing.Color.Transparent
+        No__TelpLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         No__TelpLabel.Location = New System.Drawing.Point(23, 218)
         No__TelpLabel.Name = "No__TelpLabel"
-        No__TelpLabel.Size = New System.Drawing.Size(63, 18)
+        No__TelpLabel.Size = New System.Drawing.Size(63, 16)
         No__TelpLabel.TabIndex = 14
         No__TelpLabel.Text = "No  Telp:"
         '
@@ -125,7 +133,7 @@ Partial Class Karyawan
         Me.SalesDataGridView.Location = New System.Drawing.Point(299, 101)
         Me.SalesDataGridView.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.SalesDataGridView.Name = "SalesDataGridView"
-        Me.SalesDataGridView.Size = New System.Drawing.Size(585, 193)
+        Me.SalesDataGridView.Size = New System.Drawing.Size(445, 97)
         Me.SalesDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -155,7 +163,7 @@ Partial Class Karyawan
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button1.Location = New System.Drawing.Point(429, 345)
+        Me.Button1.Location = New System.Drawing.Point(388, 260)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(87, 32)
@@ -166,7 +174,7 @@ Partial Class Karyawan
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button2.Location = New System.Drawing.Point(320, 345)
+        Me.Button2.Location = New System.Drawing.Point(279, 260)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(87, 32)
@@ -177,7 +185,7 @@ Partial Class Karyawan
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button3.Location = New System.Drawing.Point(646, 345)
+        Me.Button3.Location = New System.Drawing.Point(605, 260)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(87, 32)
@@ -188,7 +196,7 @@ Partial Class Karyawan
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button4.Location = New System.Drawing.Point(537, 345)
+        Me.Button4.Location = New System.Drawing.Point(496, 260)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(87, 32)
@@ -199,7 +207,7 @@ Partial Class Karyawan
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button5.Location = New System.Drawing.Point(756, 345)
+        Me.Button5.Location = New System.Drawing.Point(715, 260)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(87, 32)
@@ -210,8 +218,9 @@ Partial Class Karyawan
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(359, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(200, 31)
@@ -256,10 +265,10 @@ Partial Class Karyawan
         '
         'Karyawan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(988, 471)
+        Me.ClientSize = New System.Drawing.Size(988, 377)
         Me.Controls.Add(NIKLabel)
         Me.Controls.Add(Me.NIKTextBox)
         Me.Controls.Add(AlamatLabel)
