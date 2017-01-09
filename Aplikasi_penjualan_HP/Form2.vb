@@ -23,4 +23,14 @@
         Karyawan.Show()
 
     End Sub
+
+    Private Sub LoginToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LoginToolStripMenuItem.Click
+        Form1.Show()
+
+    End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoutToolStripMenuItem.Click
+        Close()
+
+    End Sub
 End Class

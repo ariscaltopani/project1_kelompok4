@@ -5,7 +5,11 @@
             TextBox2.Text = "admin"
             MessageBox.Show("Selamat datang anggota")
             Me.Hide()
-            Form2.Show()
+            Form2.CustomerToolStripMenuItem.Enabled = True
+            Form2.DataToolStripMenuItem.Enabled = True
+            Form2.StaffToolStripMenuItem.Enabled = True
+            Form2.TentangToolStripMenuItem.Enabled = True
+            Form2.LoginToolStripMenuItem.Enabled = False
         Else
             MessageBox.Show("error")
             TextBox1.Clear()
@@ -15,7 +19,9 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Close()
+        Me.Hide()
+        Form2.Show()
+
 
     End Sub
 End Class

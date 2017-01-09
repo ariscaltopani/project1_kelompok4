@@ -52,7 +52,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.DarkGray
-        Me.Button1.Location = New System.Drawing.Point(44, 209)
+        Me.Button1.Location = New System.Drawing.Point(18, 171)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 29)
@@ -63,7 +63,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.DarkGray
-        Me.Button2.Location = New System.Drawing.Point(214, 209)
+        Me.Button2.Location = New System.Drawing.Point(235, 171)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(88, 29)
@@ -110,7 +110,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(347, 249)
+        Me.ClientSize = New System.Drawing.Size(347, 206)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -121,7 +121,7 @@ Partial Class Form1
         Me.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

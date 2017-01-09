@@ -41,7 +41,6 @@ Partial Class Barang
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Kode_BarangLabel = New System.Windows.Forms.Label()
@@ -170,7 +169,7 @@ Partial Class Barang
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(258, 321)
+        Me.Button1.Location = New System.Drawing.Point(363, 321)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(87, 32)
@@ -182,7 +181,7 @@ Partial Class Barang
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Button2.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(363, 321)
+        Me.Button2.Location = New System.Drawing.Point(258, 321)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(87, 32)
@@ -202,21 +201,10 @@ Partial Class Barang
         Me.Button3.Text = "Simpan"
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button4.Location = New System.Drawing.Point(583, 321)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(87, 32)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Edit"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button5.Location = New System.Drawing.Point(695, 321)
+        Me.Button5.Location = New System.Drawing.Point(590, 321)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(87, 32)
@@ -245,7 +233,6 @@ Partial Class Barang
         Me.ClientSize = New System.Drawing.Size(933, 396)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -281,7 +268,6 @@ Partial Class Barang
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
