@@ -33,4 +33,10 @@
         Close()
 
     End Sub
+
+    Private Sub TransaksiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TransaksiToolStripMenuItem.Click
+        Me.Hide()
+        Detail_Penjualan.Show()
+
+    End Sub
 End Class

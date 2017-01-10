@@ -10,6 +10,8 @@
             Form2.StaffToolStripMenuItem.Enabled = True
             Form2.TentangToolStripMenuItem.Enabled = True
             Form2.LoginToolStripMenuItem.Enabled = False
+            Form2.TransaksiToolStripMenuItem.Enabled = True
+
         Else
             MessageBox.Show("error")
             TextBox1.Clear()

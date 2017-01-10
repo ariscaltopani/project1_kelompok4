@@ -56,26 +56,26 @@ Partial Class Detail_Penjualan
         Me.CustomerBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Sales_has_barangBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.CustomerDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Id_PembeliTextBox = New System.Windows.Forms.TextBox()
         Me.AlamatTextBox = New System.Windows.Forms.TextBox()
         Me.No__TelpTextBox = New System.Windows.Forms.TextBox()
         Me.NamaTextBox = New System.Windows.Forms.TextBox()
         Me.Sales_has_barang_sales_NIKTextBox = New System.Windows.Forms.TextBox()
         Me.Sales_has_barang_barang_Kode_BarangTextBox = New System.Windows.Forms.TextBox()
+        Me.Fkdatatransaksicustomer1BindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Fkdatatransaksicustomer1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Fkdatatransaksicustomer1BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Fkdatatransaksicustomer1BindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Data_transaksiDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Fkdatatransaksicustomer1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Fkdatatransaksicustomer1BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Fkdatatransaksicustomer1BindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Fkdatatransaksicustomer1BindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Id_PembeliLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
         No__TelpLabel = New System.Windows.Forms.Label()
@@ -92,12 +92,72 @@ Partial Class Detail_Penjualan
         CType(Me.CustomerBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Sales_has_barangBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomerDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Data_transaksiDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Fkdatatransaksicustomer1BindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Fkdatatransaksicustomer1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Fkdatatransaksicustomer1BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Fkdatatransaksicustomer1BindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Fkdatatransaksicustomer1BindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Data_transaksiDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Id_PembeliLabel
+        '
+        Id_PembeliLabel.AutoSize = True
+        Id_PembeliLabel.BackColor = System.Drawing.Color.Transparent
+        Id_PembeliLabel.Location = New System.Drawing.Point(706, 269)
+        Id_PembeliLabel.Name = "Id_PembeliLabel"
+        Id_PembeliLabel.Size = New System.Drawing.Size(74, 16)
+        Id_PembeliLabel.TabIndex = 63
+        Id_PembeliLabel.Text = "Id Pembeli:"
+        '
+        'AlamatLabel
+        '
+        AlamatLabel.AutoSize = True
+        AlamatLabel.BackColor = System.Drawing.Color.Transparent
+        AlamatLabel.Location = New System.Drawing.Point(706, 299)
+        AlamatLabel.Name = "AlamatLabel"
+        AlamatLabel.Size = New System.Drawing.Size(54, 16)
+        AlamatLabel.TabIndex = 65
+        AlamatLabel.Text = "Alamat:"
+        '
+        'No__TelpLabel
+        '
+        No__TelpLabel.AutoSize = True
+        No__TelpLabel.BackColor = System.Drawing.Color.Transparent
+        No__TelpLabel.Location = New System.Drawing.Point(706, 329)
+        No__TelpLabel.Name = "No__TelpLabel"
+        No__TelpLabel.Size = New System.Drawing.Size(63, 16)
+        No__TelpLabel.TabIndex = 67
+        No__TelpLabel.Text = "No  Telp:"
+        '
+        'NamaLabel
+        '
+        NamaLabel.AutoSize = True
+        NamaLabel.BackColor = System.Drawing.Color.Transparent
+        NamaLabel.Location = New System.Drawing.Point(706, 359)
+        NamaLabel.Name = "NamaLabel"
+        NamaLabel.Size = New System.Drawing.Size(46, 16)
+        NamaLabel.TabIndex = 69
+        NamaLabel.Text = "Nama:"
+        '
+        'Sales_has_barang_sales_NIKLabel
+        '
+        Sales_has_barang_sales_NIKLabel.AutoSize = True
+        Sales_has_barang_sales_NIKLabel.BackColor = System.Drawing.Color.Transparent
+        Sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(706, 389)
+        Sales_has_barang_sales_NIKLabel.Name = "Sales_has_barang_sales_NIKLabel"
+        Sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(73, 16)
+        Sales_has_barang_sales_NIKLabel.TabIndex = 71
+        Sales_has_barang_sales_NIKLabel.Text = "Sales NIK:"
+        '
+        'Sales_has_barang_barang_Kode_BarangLabel
+        '
+        Sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
+        Sales_has_barang_barang_Kode_BarangLabel.BackColor = System.Drawing.Color.Transparent
+        Sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(706, 419)
+        Sales_has_barang_barang_Kode_BarangLabel.Name = "Sales_has_barang_barang_Kode_BarangLabel"
+        Sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(85, 16)
+        Sales_has_barang_barang_Kode_BarangLabel.TabIndex = 73
+        Sales_has_barang_barang_Kode_BarangLabel.Text = "Kode Barang:"
         '
         'Kelompok2DataSet
         '
@@ -288,15 +348,41 @@ Partial Class Detail_Penjualan
         Me.CustomerDataGridView.Size = New System.Drawing.Size(646, 122)
         Me.CustomerDataGridView.TabIndex = 58
         '
-        'Id_PembeliLabel
+        'DataGridViewTextBoxColumn4
         '
-        Id_PembeliLabel.AutoSize = True
-        Id_PembeliLabel.BackColor = System.Drawing.Color.Transparent
-        Id_PembeliLabel.Location = New System.Drawing.Point(706, 269)
-        Id_PembeliLabel.Name = "Id_PembeliLabel"
-        Id_PembeliLabel.Size = New System.Drawing.Size(74, 16)
-        Id_PembeliLabel.TabIndex = 63
-        Id_PembeliLabel.Text = "Id Pembeli:"
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Id Pembeli"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Id Pembeli"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Alamat"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Alamat"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "No_ Telp"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "No_ Telp"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Nama"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Nama"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "sales_has_barang_sales_NIK"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Sales_NIK"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "sales_has_barang_barang_Kode Barang"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Kode Barang"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
         'Id_PembeliTextBox
         '
@@ -306,16 +392,6 @@ Partial Class Detail_Penjualan
         Me.Id_PembeliTextBox.Size = New System.Drawing.Size(100, 24)
         Me.Id_PembeliTextBox.TabIndex = 64
         '
-        'AlamatLabel
-        '
-        AlamatLabel.AutoSize = True
-        AlamatLabel.BackColor = System.Drawing.Color.Transparent
-        AlamatLabel.Location = New System.Drawing.Point(706, 299)
-        AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(54, 16)
-        AlamatLabel.TabIndex = 65
-        AlamatLabel.Text = "Alamat:"
-        '
         'AlamatTextBox
         '
         Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "Alamat", True))
@@ -323,16 +399,6 @@ Partial Class Detail_Penjualan
         Me.AlamatTextBox.Name = "AlamatTextBox"
         Me.AlamatTextBox.Size = New System.Drawing.Size(100, 24)
         Me.AlamatTextBox.TabIndex = 66
-        '
-        'No__TelpLabel
-        '
-        No__TelpLabel.AutoSize = True
-        No__TelpLabel.BackColor = System.Drawing.Color.Transparent
-        No__TelpLabel.Location = New System.Drawing.Point(706, 329)
-        No__TelpLabel.Name = "No__TelpLabel"
-        No__TelpLabel.Size = New System.Drawing.Size(63, 16)
-        No__TelpLabel.TabIndex = 67
-        No__TelpLabel.Text = "No  Telp:"
         '
         'No__TelpTextBox
         '
@@ -342,16 +408,6 @@ Partial Class Detail_Penjualan
         Me.No__TelpTextBox.Size = New System.Drawing.Size(100, 24)
         Me.No__TelpTextBox.TabIndex = 68
         '
-        'NamaLabel
-        '
-        NamaLabel.AutoSize = True
-        NamaLabel.BackColor = System.Drawing.Color.Transparent
-        NamaLabel.Location = New System.Drawing.Point(706, 359)
-        NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(46, 16)
-        NamaLabel.TabIndex = 69
-        NamaLabel.Text = "Nama:"
-        '
         'NamaTextBox
         '
         Me.NamaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "Nama", True))
@@ -359,16 +415,6 @@ Partial Class Detail_Penjualan
         Me.NamaTextBox.Name = "NamaTextBox"
         Me.NamaTextBox.Size = New System.Drawing.Size(100, 24)
         Me.NamaTextBox.TabIndex = 70
-        '
-        'Sales_has_barang_sales_NIKLabel
-        '
-        Sales_has_barang_sales_NIKLabel.AutoSize = True
-        Sales_has_barang_sales_NIKLabel.BackColor = System.Drawing.Color.Transparent
-        Sales_has_barang_sales_NIKLabel.Location = New System.Drawing.Point(706, 389)
-        Sales_has_barang_sales_NIKLabel.Name = "Sales_has_barang_sales_NIKLabel"
-        Sales_has_barang_sales_NIKLabel.Size = New System.Drawing.Size(73, 16)
-        Sales_has_barang_sales_NIKLabel.TabIndex = 71
-        Sales_has_barang_sales_NIKLabel.Text = "Sales NIK:"
         '
         'Sales_has_barang_sales_NIKTextBox
         '
@@ -378,16 +424,6 @@ Partial Class Detail_Penjualan
         Me.Sales_has_barang_sales_NIKTextBox.Size = New System.Drawing.Size(100, 24)
         Me.Sales_has_barang_sales_NIKTextBox.TabIndex = 72
         '
-        'Sales_has_barang_barang_Kode_BarangLabel
-        '
-        Sales_has_barang_barang_Kode_BarangLabel.AutoSize = True
-        Sales_has_barang_barang_Kode_BarangLabel.BackColor = System.Drawing.Color.Transparent
-        Sales_has_barang_barang_Kode_BarangLabel.Location = New System.Drawing.Point(706, 419)
-        Sales_has_barang_barang_Kode_BarangLabel.Name = "Sales_has_barang_barang_Kode_BarangLabel"
-        Sales_has_barang_barang_Kode_BarangLabel.Size = New System.Drawing.Size(85, 16)
-        Sales_has_barang_barang_Kode_BarangLabel.TabIndex = 73
-        Sales_has_barang_barang_Kode_BarangLabel.Text = "Kode Barang:"
-        '
         'Sales_has_barang_barang_Kode_BarangTextBox
         '
         Me.Sales_has_barang_barang_Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomerBindingSource, "sales_has_barang_barang_Kode Barang", True))
@@ -396,15 +432,35 @@ Partial Class Detail_Penjualan
         Me.Sales_has_barang_barang_Kode_BarangTextBox.Size = New System.Drawing.Size(100, 24)
         Me.Sales_has_barang_barang_Kode_BarangTextBox.TabIndex = 74
         '
+        'Fkdatatransaksicustomer1BindingSource3
+        '
+        Me.Fkdatatransaksicustomer1BindingSource3.DataMember = "fk_data_transaksi_customer1"
+        Me.Fkdatatransaksicustomer1BindingSource3.DataSource = Me.CustomerBindingSource
+        '
+        'Fkdatatransaksicustomer1BindingSource
+        '
+        Me.Fkdatatransaksicustomer1BindingSource.DataMember = "fk_data_transaksi_customer1"
+        Me.Fkdatatransaksicustomer1BindingSource.DataSource = Me.CustomerBindingSource
+        '
+        'Fkdatatransaksicustomer1BindingSource1
+        '
+        Me.Fkdatatransaksicustomer1BindingSource1.DataMember = "fk_data_transaksi_customer1"
+        Me.Fkdatatransaksicustomer1BindingSource1.DataSource = Me.CustomerBindingSource
+        '
+        'Fkdatatransaksicustomer1BindingSource2
+        '
+        Me.Fkdatatransaksicustomer1BindingSource2.DataMember = "fk_data_transaksi_customer1"
+        Me.Fkdatatransaksicustomer1BindingSource2.DataSource = Me.CustomerBindingSource
+        '
         'Data_transaksiDataGridView
         '
         Me.Data_transaksiDataGridView.AutoGenerateColumns = False
         Me.Data_transaksiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Data_transaksiDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
-        Me.Data_transaksiDataGridView.DataSource = Me.Fkdatatransaksicustomer1BindingSource3
-        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(41, 419)
+        Me.Data_transaksiDataGridView.DataSource = Me.Data_transaksiBindingSource1
+        Me.Data_transaksiDataGridView.Location = New System.Drawing.Point(41, 437)
         Me.Data_transaksiDataGridView.Name = "Data_transaksiDataGridView"
-        Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(314, 143)
+        Me.Data_transaksiDataGridView.Size = New System.Drawing.Size(345, 140)
         Me.Data_transaksiDataGridView.TabIndex = 74
         '
         'DataGridViewTextBoxColumn1
@@ -425,62 +481,6 @@ Partial Class Detail_Penjualan
         Me.DataGridViewTextBoxColumn3.HeaderText = "Kode Barang"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'Fkdatatransaksicustomer1BindingSource
-        '
-        Me.Fkdatatransaksicustomer1BindingSource.DataMember = "fk_data_transaksi_customer1"
-        Me.Fkdatatransaksicustomer1BindingSource.DataSource = Me.CustomerBindingSource
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "sales_has_barang_barang_Kode Barang"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Kode Barang"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "sales_has_barang_sales_NIK"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Sales_NIK"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Nama"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Nama"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "No_ Telp"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "No_ Telp"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Alamat"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Alamat"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Id Pembeli"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Id Pembeli"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'Fkdatatransaksicustomer1BindingSource1
-        '
-        Me.Fkdatatransaksicustomer1BindingSource1.DataMember = "fk_data_transaksi_customer1"
-        Me.Fkdatatransaksicustomer1BindingSource1.DataSource = Me.CustomerBindingSource
-        '
-        'Fkdatatransaksicustomer1BindingSource2
-        '
-        Me.Fkdatatransaksicustomer1BindingSource2.DataMember = "fk_data_transaksi_customer1"
-        Me.Fkdatatransaksicustomer1BindingSource2.DataSource = Me.CustomerBindingSource
-        '
-        'Fkdatatransaksicustomer1BindingSource3
-        '
-        Me.Fkdatatransaksicustomer1BindingSource3.DataMember = "fk_data_transaksi_customer1"
-        Me.Fkdatatransaksicustomer1BindingSource3.DataSource = Me.CustomerBindingSource
-        '
         'Detail_Penjualan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -488,7 +488,7 @@ Partial Class Detail_Penjualan
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(972, 632)
+        Me.ClientSize = New System.Drawing.Size(972, 689)
         Me.Controls.Add(Me.Data_transaksiDataGridView)
         Me.Controls.Add(Id_PembeliLabel)
         Me.Controls.Add(Me.Id_PembeliTextBox)
@@ -526,11 +526,11 @@ Partial Class Detail_Penjualan
         CType(Me.CustomerBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Sales_has_barangBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomerDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Data_transaksiDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Fkdatatransaksicustomer1BindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Fkdatatransaksicustomer1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Fkdatatransaksicustomer1BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Fkdatatransaksicustomer1BindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Fkdatatransaksicustomer1BindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Data_transaksiDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -567,10 +567,6 @@ Partial Class Detail_Penjualan
     Friend WithEvents NamaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Sales_has_barang_sales_NIKTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Sales_has_barang_barang_Kode_BarangTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Data_transaksiDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -581,4 +577,8 @@ Partial Class Detail_Penjualan
     Friend WithEvents Fkdatatransaksicustomer1BindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Fkdatatransaksicustomer1BindingSource3 As System.Windows.Forms.BindingSource
     Friend WithEvents Fkdatatransaksicustomer1BindingSource2 As System.Windows.Forms.BindingSource
+    Friend WithEvents Data_transaksiDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

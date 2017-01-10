@@ -34,12 +34,13 @@ Partial Class Form2
         Me.StaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TentangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DataToolStripMenuItem, Me.StaffToolStripMenuItem, Me.TentangToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DataToolStripMenuItem, Me.StaffToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.TentangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(477, 24)
@@ -118,6 +119,14 @@ Partial Class Form2
         Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
         Me.TentangToolStripMenuItem.Text = "Tentang"
         '
+        'TransaksiToolStripMenuItem
+        '
+        Me.TransaksiToolStripMenuItem.Enabled = False
+        Me.TransaksiToolStripMenuItem.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
+        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
+        Me.TransaksiToolStripMenuItem.Text = "Transaksi"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -145,4 +154,5 @@ Partial Class Form2
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LoginToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LogoutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TransaksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
