@@ -58,19 +58,20 @@
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
-        CustomerBindingSource.AddNew()
+        Sales_has_barangBindingSource.AddNew()
 
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
-        CustomerBindingSource.RemoveCurrent()
+        Sales_has_barangBindingSource.RemoveCurrent()
 
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         Me.Validate()
-        Me.CustomerBindingSource.EndEdit()
-        Me.Fkdatatransaksicustomer1BindingSource3.EndEdit()
+        Me.Sales_has_barangBindingSource.EndEdit()
+        Customer.CustomerBindingSource.EndEdit()
+        Me.CustomerBindingSource1.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Kelompok2DataSet)
     End Sub
 
@@ -134,4 +135,45 @@
 
 
 
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.Validate()
+        Me.Data_transaksiBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Kelompok2DataSet)
+    End Sub
+
+    Private Sub Barang_Kode_BarangLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Sales_NIKLabel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Id_PembeliLabel_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Sales_has_barang_barang_Kode_BarangLabel_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Sales_has_barang_sales_NIKLabel_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub NamaLabel_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub No__TelpLabel_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub AlamatLabel_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub cariText_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cariText.TextChanged
+        BarangTableAdapter.cariQuery(Kelompok2DataSet.barang, "" & cariText.Text & "")
+    End Sub
 End Class

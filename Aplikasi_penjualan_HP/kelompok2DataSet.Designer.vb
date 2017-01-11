@@ -2882,11 +2882,24 @@ Namespace kelompok2DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
+            Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(1) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT `Kode Barang`, `Merk HP`, `Harga` FROM `barang`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.MySql.Data.MySqlClient.MySqlCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT `Kode Barang`, `Merk HP`, `Harga` FROM `barang`"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"where `Merk HP` like@cari"& _ 
+                ""
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@cari"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.Size = 45
+            param.IsNullable = true
+            param.SourceColumn = "Merk HP"
+            Me._commandCollection(1).Parameters.Add(param)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -2911,6 +2924,24 @@ Namespace kelompok2DataSetTableAdapters
             Dim dataTable As kelompok2DataSet.barangDataTable = New kelompok2DataSet.barangDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function cariQuery(ByVal dataTable As kelompok2DataSet.barangDataTable, ByVal cari As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (cari Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(cari,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

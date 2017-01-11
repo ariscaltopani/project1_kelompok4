@@ -35,12 +35,6 @@ Partial Class Customer
         Me.CustomerTableAdapter = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.customerTableAdapter()
         Me.TableAdapterManager = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager()
         Me.CustomerDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Id_PembeliTextBox = New System.Windows.Forms.TextBox()
         Me.AlamatTextBox = New System.Windows.Forms.TextBox()
         Me.No__TelpTextBox = New System.Windows.Forms.TextBox()
@@ -54,6 +48,14 @@ Partial Class Customer
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Fkdatatransaksicustomer1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Data_transaksiTableAdapter = New Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.data_transaksiTableAdapter()
+        Me.IdPembeliDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AlamatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NoTelpDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SaleshasbarangsalesNIKDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Id_PembeliLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
         No__TelpLabel = New System.Windows.Forms.Label()
@@ -64,6 +66,7 @@ Partial Class Customer
         CType(Me.CustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomerDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.Fkdatatransaksicustomer1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Id_PembeliLabel
@@ -166,49 +169,13 @@ Partial Class Customer
         '
         Me.CustomerDataGridView.AutoGenerateColumns = False
         Me.CustomerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CustomerDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.CustomerDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdPembeliDataGridViewTextBoxColumn, Me.AlamatDataGridViewTextBoxColumn, Me.NoTelpDataGridViewTextBoxColumn, Me.NamaDataGridViewTextBoxColumn, Me.SaleshasbarangsalesNIKDataGridViewTextBoxColumn, Me.SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn})
         Me.CustomerDataGridView.DataSource = Me.CustomerBindingSource
         Me.CustomerDataGridView.Location = New System.Drawing.Point(13, 313)
         Me.CustomerDataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.CustomerDataGridView.Name = "CustomerDataGridView"
         Me.CustomerDataGridView.Size = New System.Drawing.Size(704, 116)
         Me.CustomerDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Id Pembeli"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Id Pembeli"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Alamat"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Alamat"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "No_ Telp"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "No_ Telp"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Nama"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Nama"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "sales_has_barang_sales_NIK"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "sales_has_barang_sales_NIK"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "sales_has_barang_barang_Kode Barang"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "sales_has_barang_barang_Kode Barang"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'Id_PembeliTextBox
         '
@@ -348,6 +315,51 @@ Partial Class Customer
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "Customer"
         '
+        'Fkdatatransaksicustomer1BindingSource
+        '
+        Me.Fkdatatransaksicustomer1BindingSource.DataMember = "fk_data_transaksi_customer1"
+        Me.Fkdatatransaksicustomer1BindingSource.DataSource = Me.CustomerBindingSource
+        '
+        'Data_transaksiTableAdapter
+        '
+        Me.Data_transaksiTableAdapter.ClearBeforeFill = True
+        '
+        'IdPembeliDataGridViewTextBoxColumn
+        '
+        Me.IdPembeliDataGridViewTextBoxColumn.DataPropertyName = "Id Pembeli"
+        Me.IdPembeliDataGridViewTextBoxColumn.HeaderText = "Id Pembeli"
+        Me.IdPembeliDataGridViewTextBoxColumn.Name = "IdPembeliDataGridViewTextBoxColumn"
+        '
+        'AlamatDataGridViewTextBoxColumn
+        '
+        Me.AlamatDataGridViewTextBoxColumn.DataPropertyName = "Alamat"
+        Me.AlamatDataGridViewTextBoxColumn.HeaderText = "Alamat"
+        Me.AlamatDataGridViewTextBoxColumn.Name = "AlamatDataGridViewTextBoxColumn"
+        '
+        'NoTelpDataGridViewTextBoxColumn
+        '
+        Me.NoTelpDataGridViewTextBoxColumn.DataPropertyName = "No_ Telp"
+        Me.NoTelpDataGridViewTextBoxColumn.HeaderText = "No_ Telp"
+        Me.NoTelpDataGridViewTextBoxColumn.Name = "NoTelpDataGridViewTextBoxColumn"
+        '
+        'NamaDataGridViewTextBoxColumn
+        '
+        Me.NamaDataGridViewTextBoxColumn.DataPropertyName = "Nama"
+        Me.NamaDataGridViewTextBoxColumn.HeaderText = "Nama"
+        Me.NamaDataGridViewTextBoxColumn.Name = "NamaDataGridViewTextBoxColumn"
+        '
+        'SaleshasbarangsalesNIKDataGridViewTextBoxColumn
+        '
+        Me.SaleshasbarangsalesNIKDataGridViewTextBoxColumn.DataPropertyName = "sales_has_barang_sales_NIK"
+        Me.SaleshasbarangsalesNIKDataGridViewTextBoxColumn.HeaderText = "sales_has_barang_sales_NIK"
+        Me.SaleshasbarangsalesNIKDataGridViewTextBoxColumn.Name = "SaleshasbarangsalesNIKDataGridViewTextBoxColumn"
+        '
+        'SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn
+        '
+        Me.SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn.DataPropertyName = "sales_has_barang_barang_Kode Barang"
+        Me.SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn.HeaderText = "sales_has_barang_barang_Kode Barang"
+        Me.SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn.Name = "SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn"
+        '
         'Customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
@@ -377,6 +389,7 @@ Partial Class Customer
         CType(Me.CustomerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomerDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.Fkdatatransaksicustomer1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -386,12 +399,6 @@ Partial Class Customer
     Friend WithEvents CustomerTableAdapter As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.customerTableAdapter
     Friend WithEvents TableAdapterManager As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.TableAdapterManager
     Friend WithEvents CustomerDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Id_PembeliTextBox As System.Windows.Forms.TextBox
     Friend WithEvents AlamatTextBox As System.Windows.Forms.TextBox
     Friend WithEvents No__TelpTextBox As System.Windows.Forms.TextBox
@@ -405,4 +412,12 @@ Partial Class Customer
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Fkdatatransaksicustomer1BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Data_transaksiTableAdapter As Aplikasi_penjualan_HP.kelompok2DataSetTableAdapters.data_transaksiTableAdapter
+    Friend WithEvents IdPembeliDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AlamatDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NoTelpDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NamaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SaleshasbarangsalesNIKDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SaleshasbarangbarangKodeBarangDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

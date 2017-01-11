@@ -8,6 +8,8 @@
     End Sub
 
     Private Sub Customer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Kelompok2DataSet.data_transaksi' table. You can move, or remove it, as needed.
+        Me.Data_transaksiTableAdapter.Fill(Me.Kelompok2DataSet.data_transaksi)
         'TODO: This line of code loads data into the 'Kelompok2DataSet.customer' table. You can move, or remove it, as needed.
         Me.CustomerTableAdapter.Fill(Me.Kelompok2DataSet.customer)
 
@@ -24,6 +26,7 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Validate()
         Me.CustomerBindingSource.EndEdit()
+        Detail_Penjualan.CustomerBindingSource1.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Kelompok2DataSet)
     End Sub
 
@@ -39,4 +42,5 @@
     Private Sub CustomerDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles CustomerDataGridView.CellContentClick
 
     End Sub
+
 End Class
